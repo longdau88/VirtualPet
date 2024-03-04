@@ -1,0 +1,10 @@
+/obj/
+/.vs/
+/Temp/
+/Library
+/Logs/
+/MemmoryCaptures/
+/AssetBundles/
+/UserSettings/
+*.csproj
+*.sln
