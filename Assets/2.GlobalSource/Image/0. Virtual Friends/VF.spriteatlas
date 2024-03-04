@@ -1,0 +1,106 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: VF
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: iPhone
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 50
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    - serializedVersion: 3
+      m_BuildTarget: Android
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 50
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: 58e226e794222ed409be996ef805f2ca, type: 3}
+    - {fileID: 2800000, guid: 42a26ac961db5784a845ec90fdeb31a6, type: 3}
+    - {fileID: 2800000, guid: fcb1a4e973899244ea15536999c19139, type: 3}
+    - {fileID: 2800000, guid: 657b465977cc7804a87bffcb76324c89, type: 3}
+    - {fileID: 2800000, guid: d1f324f61ab2bbb4aa7168f0a1d93ada, type: 3}
+    - {fileID: 2800000, guid: dbf590cbcfb3aa949ab24dcea1c787e0, type: 3}
+    - {fileID: 2800000, guid: 8f350209458fa59419c79cf712529ab8, type: 3}
+    - {fileID: 2800000, guid: df90934a81a0fdb41988f810f17cab2a, type: 3}
+    - {fileID: 2800000, guid: e1399f9855dc7eb44941fb1df3339f98, type: 3}
+    - {fileID: 2800000, guid: dc4bd0e67b0d2a24b926b910f28466c9, type: 3}
+    - {fileID: 2800000, guid: 98aaf73f18714c140b9c7562eedb3266, type: 3}
+    - {fileID: 2800000, guid: 1db560481e69aa04485a20003a4dc1d9, type: 3}
+    - {fileID: 2800000, guid: 880ceeb0cdd98f24586cf1c4f0864495, type: 3}
+    totalSpriteSurfaceArea: 267152
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 880ceeb0cdd98f24586cf1c4f0864495, type: 3}
+  - {fileID: 21300000, guid: dc4bd0e67b0d2a24b926b910f28466c9, type: 3}
+  - {fileID: 21300000, guid: d1f324f61ab2bbb4aa7168f0a1d93ada, type: 3}
+  - {fileID: 21300000, guid: 58e226e794222ed409be996ef805f2ca, type: 3}
+  - {fileID: 21300000, guid: 1db560481e69aa04485a20003a4dc1d9, type: 3}
+  - {fileID: 21300000, guid: e1399f9855dc7eb44941fb1df3339f98, type: 3}
+  - {fileID: 21300000, guid: 8f350209458fa59419c79cf712529ab8, type: 3}
+  - {fileID: 21300000, guid: 657b465977cc7804a87bffcb76324c89, type: 3}
+  - {fileID: 21300000, guid: 42a26ac961db5784a845ec90fdeb31a6, type: 3}
+  - {fileID: 21300000, guid: fcb1a4e973899244ea15536999c19139, type: 3}
+  - {fileID: 21300000, guid: df90934a81a0fdb41988f810f17cab2a, type: 3}
+  - {fileID: 21300000, guid: dbf590cbcfb3aa949ab24dcea1c787e0, type: 3}
+  - {fileID: 21300000, guid: 98aaf73f18714c140b9c7562eedb3266, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - xa phong
+  - fish icon
+  - bttn-white
+  - bttn-eat
+  - icon trang thai
+  - emo 3
+  - emo 1
+  - bttn-toilet
+  - bttn-game
+  - bttn-sleep
+  - emo 2
+  - 'bubble '
+  - foodIcon
+  m_RenderDataMap: {}
+  m_Tag: VF
+  m_IsVariant: 0

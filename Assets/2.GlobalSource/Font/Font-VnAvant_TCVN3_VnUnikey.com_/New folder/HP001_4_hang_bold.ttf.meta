@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 4631fdc143e1fe847bff62660d76fa3c
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - HP001 4 h?ng
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 2fd94242bed069e4eacdf2d7af6c2cce, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

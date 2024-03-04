@@ -1,0 +1,25 @@
+fileFormatVersion: 2
+guid: 79717ef8048711541b2d1d4166d19984
+timeCreated: 1511862347
+licenseType: Pro
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 120
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: My Font
+  fontNames:
+  - UVN Van
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: c47de8230014d8545b3b221dca113538, type: 3}
+  - {fileID: 12800000, guid: 9156a30a0bf0943e991871f87684fc99, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

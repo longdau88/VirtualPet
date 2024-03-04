@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 22482319c803743d5a643e0f1745b19b
+timeCreated: 1508929260
+licenseType: Pro
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: SVN-Dumpling
+  fontNames:
+  - SVN-Dumpling
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 1d32691986278dd4b886fafea09aa9fa, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

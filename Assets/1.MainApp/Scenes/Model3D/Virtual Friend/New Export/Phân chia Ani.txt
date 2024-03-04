@@ -1,0 +1,23 @@
+idle_1: 0-120
+idle_2: 120-240
+laungh: 241-301
+relax: 302-452
+talk: 453-613
+sleep: 614 - 794
+angry: 795 - 885
+attack: 886 - 946
+jump: 947 - 1027
+hear: 1028 - 1148
+eat: 1149 - 1299
+fall: 1300 - 1360
+walk: 1361 - 1451
+run: 1452 - 1542
+tu choi: 1543 -1603
+nguoi ban: 1604 - 1724
+hungry: 1725 - 1865
+danh rang: 1866 - 1956
+sad: 1957 - 2047
+buon ngu 1: 2048 -2158
+buon ngu 2: 2159 - 2249
+wake up: 2250 - 2350
+dang mac dinh: 2351
