@@ -1,0 +1,1457 @@
+{
+"skeleton": { "hash": "JOz+zekTYUt+EOcOxIxMAFfsp7g", "spine": "3.8.82", "x": -960.01, "y": -540.02, "width": 1920.03, "height": 1080.04 },
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "mockup-iphone_00000", "bone": "root", "attachment": "mockup-iphone_00000" },
+	{ "name": "mockup-iphone_00001", "bone": "root", "attachment": "mockup-iphone_00001" },
+	{ "name": "mockup-iphone_00002", "bone": "root", "attachment": "mockup-iphone_00002" },
+	{ "name": "mockup-iphone_00003", "bone": "root", "attachment": "mockup-iphone_00003" },
+	{ "name": "mockup-iphone_00004", "bone": "root", "attachment": "mockup-iphone_00004" },
+	{ "name": "mockup-iphone_00005", "bone": "root", "attachment": "mockup-iphone_00005" },
+	{ "name": "mockup-iphone_00006", "bone": "root", "attachment": "mockup-iphone_00006" },
+	{ "name": "mockup-iphone_00007", "bone": "root", "attachment": "mockup-iphone_00007" },
+	{ "name": "mockup-iphone_00008", "bone": "root", "attachment": "mockup-iphone_00008" },
+	{ "name": "mockup-iphone_00009", "bone": "root", "attachment": "mockup-iphone_00009" },
+	{ "name": "mockup-iphone_00010", "bone": "root", "attachment": "mockup-iphone_00010" },
+	{ "name": "mockup-iphone_00011", "bone": "root", "attachment": "mockup-iphone_00011" },
+	{ "name": "mockup-iphone_00012", "bone": "root", "attachment": "mockup-iphone_00012" },
+	{ "name": "mockup-iphone_00013", "bone": "root", "attachment": "mockup-iphone_00013" },
+	{ "name": "mockup-iphone_00014", "bone": "root", "attachment": "mockup-iphone_00014" },
+	{ "name": "mockup-iphone_00015", "bone": "root", "attachment": "mockup-iphone_00015" },
+	{ "name": "mockup-iphone_00016", "bone": "root", "attachment": "mockup-iphone_00016" },
+	{ "name": "mockup-iphone_00017", "bone": "root", "attachment": "mockup-iphone_00017" },
+	{ "name": "mockup-iphone_00018", "bone": "root", "attachment": "mockup-iphone_00018" },
+	{ "name": "mockup-iphone_00019", "bone": "root", "attachment": "mockup-iphone_00019" },
+	{ "name": "mockup-iphone_00020", "bone": "root", "attachment": "mockup-iphone_00020" },
+	{ "name": "mockup-iphone_00021", "bone": "root", "attachment": "mockup-iphone_00021" },
+	{ "name": "mockup-iphone_00022", "bone": "root", "attachment": "mockup-iphone_00022" },
+	{ "name": "mockup-iphone_00023", "bone": "root", "attachment": "mockup-iphone_00023" },
+	{ "name": "mockup-iphone_00024", "bone": "root", "attachment": "mockup-iphone_00024" },
+	{ "name": "mockup-iphone_00025", "bone": "root", "attachment": "mockup-iphone_00025" },
+	{ "name": "mockup-iphone_00026", "bone": "root", "attachment": "mockup-iphone_00026" },
+	{ "name": "mockup-iphone_00027", "bone": "root", "attachment": "mockup-iphone_00027" },
+	{ "name": "mockup-iphone_00028", "bone": "root", "attachment": "mockup-iphone_00028" },
+	{ "name": "mockup-iphone_00029", "bone": "root", "attachment": "mockup-iphone_00029" },
+	{ "name": "mockup-iphone_00030", "bone": "root", "attachment": "mockup-iphone_00030" },
+	{ "name": "mockup-iphone_00031", "bone": "root", "attachment": "mockup-iphone_00031" },
+	{ "name": "mockup-iphone_00032", "bone": "root", "attachment": "mockup-iphone_00032" },
+	{ "name": "mockup-iphone_00033", "bone": "root", "attachment": "mockup-iphone_00033" },
+	{ "name": "mockup-iphone_00034", "bone": "root", "attachment": "mockup-iphone_00034" },
+	{ "name": "mockup-iphone_00035", "bone": "root", "attachment": "mockup-iphone_00035" },
+	{ "name": "mockup-iphone_00036", "bone": "root", "attachment": "mockup-iphone_00036" },
+	{ "name": "mockup-iphone_00037", "bone": "root", "attachment": "mockup-iphone_00037" },
+	{ "name": "mockup-iphone_00038", "bone": "root", "attachment": "mockup-iphone_00038" },
+	{ "name": "mockup-iphone_00039", "bone": "root", "attachment": "mockup-iphone_00039" },
+	{ "name": "mockup-iphone_00040", "bone": "root", "attachment": "mockup-iphone_00040" },
+	{ "name": "mockup-iphone_00041", "bone": "root", "attachment": "mockup-iphone_00041" },
+	{ "name": "mockup-iphone_00042", "bone": "root", "attachment": "mockup-iphone_00042" },
+	{ "name": "mockup-iphone_00043", "bone": "root", "attachment": "mockup-iphone_00043" },
+	{ "name": "mockup-iphone_00044", "bone": "root", "attachment": "mockup-iphone_00044" },
+	{ "name": "mockup-iphone_00045", "bone": "root", "attachment": "mockup-iphone_00045" },
+	{ "name": "mockup-iphone_00046", "bone": "root", "attachment": "mockup-iphone_00046" },
+	{ "name": "mockup-iphone_00047", "bone": "root", "attachment": "mockup-iphone_00047" },
+	{ "name": "mockup-iphone_00048", "bone": "root", "attachment": "mockup-iphone_00048" },
+	{ "name": "mockup-iphone_00049", "bone": "root", "attachment": "mockup-iphone_00049" },
+	{ "name": "mockup-iphone_00050", "bone": "root", "attachment": "mockup-iphone_00050" },
+	{ "name": "mockup-iphone_00051", "bone": "root", "attachment": "mockup-iphone_00051" },
+	{ "name": "mockup-iphone_00052", "bone": "root", "attachment": "mockup-iphone_00052" },
+	{ "name": "mockup-iphone_00053", "bone": "root", "attachment": "mockup-iphone_00053" },
+	{ "name": "mockup-iphone_00054", "bone": "root", "attachment": "mockup-iphone_00054" },
+	{ "name": "mockup-iphone_00055", "bone": "root", "attachment": "mockup-iphone_00055" },
+	{ "name": "mockup-iphone_00056", "bone": "root", "attachment": "mockup-iphone_00056" },
+	{ "name": "mockup-iphone_00057", "bone": "root", "attachment": "mockup-iphone_00057" },
+	{ "name": "mockup-iphone_00058", "bone": "root", "attachment": "mockup-iphone_00058" },
+	{ "name": "mockup-iphone_00059", "bone": "root", "attachment": "mockup-iphone_00059" },
+	{ "name": "mockup-iphone_00060", "bone": "root", "attachment": "mockup-iphone_00060" },
+	{ "name": "mockup-iphone_00061", "bone": "root", "attachment": "mockup-iphone_00061" },
+	{ "name": "mockup-iphone_00062", "bone": "root", "attachment": "mockup-iphone_00062" },
+	{ "name": "mockup-iphone_00063", "bone": "root", "attachment": "mockup-iphone_00063" },
+	{ "name": "mockup-iphone_00064", "bone": "root", "attachment": "mockup-iphone_00064" },
+	{ "name": "mockup-iphone_00065", "bone": "root", "attachment": "mockup-iphone_00065" },
+	{ "name": "mockup-iphone_00066", "bone": "root", "attachment": "mockup-iphone_00066" },
+	{ "name": "mockup-iphone_00067", "bone": "root", "attachment": "mockup-iphone_00067" },
+	{ "name": "mockup-iphone_00068", "bone": "root", "attachment": "mockup-iphone_00068" },
+	{ "name": "mockup-iphone_00069", "bone": "root", "attachment": "mockup-iphone_00069" },
+	{ "name": "mockup-iphone_00070", "bone": "root", "attachment": "mockup-iphone_00070" },
+	{ "name": "mockup-iphone_00071", "bone": "root", "attachment": "mockup-iphone_00071" },
+	{ "name": "mockup-iphone_00072", "bone": "root", "attachment": "mockup-iphone_00072" },
+	{ "name": "mockup-iphone_00073", "bone": "root", "attachment": "mockup-iphone_00073" },
+	{ "name": "mockup-iphone_00074", "bone": "root", "attachment": "mockup-iphone_00074" },
+	{ "name": "mockup-iphone_00075", "bone": "root", "attachment": "mockup-iphone_00075" },
+	{ "name": "mockup-iphone_00076", "bone": "root", "attachment": "mockup-iphone_00076" },
+	{ "name": "mockup-iphone_00077", "bone": "root", "attachment": "mockup-iphone_00077" },
+	{ "name": "mockup-iphone_00078", "bone": "root", "attachment": "mockup-iphone_00078" },
+	{ "name": "mockup-iphone_00079", "bone": "root", "attachment": "mockup-iphone_00079" },
+	{ "name": "mockup-iphone_00080", "bone": "root", "attachment": "mockup-iphone_00080" },
+	{ "name": "mockup-iphone_00081", "bone": "root", "attachment": "mockup-iphone_00081" },
+	{ "name": "mockup-iphone_00082", "bone": "root", "attachment": "mockup-iphone_00082" },
+	{ "name": "mockup-iphone_00083", "bone": "root", "attachment": "mockup-iphone_00083" },
+	{ "name": "mockup-iphone_00084", "bone": "root", "attachment": "mockup-iphone_00084" },
+	{ "name": "mockup-iphone_00085", "bone": "root", "attachment": "mockup-iphone_00085" },
+	{ "name": "mockup-iphone_00086", "bone": "root", "attachment": "mockup-iphone_00086" },
+	{ "name": "mockup-iphone_00087", "bone": "root", "attachment": "mockup-iphone_00087" },
+	{ "name": "mockup-iphone_00088", "bone": "root", "attachment": "mockup-iphone_00088" },
+	{ "name": "mockup-iphone_00089", "bone": "root", "attachment": "mockup-iphone_00089" },
+	{ "name": "mockup-iphone_00090", "bone": "root", "attachment": "mockup-iphone_00090" },
+	{ "name": "mockup-iphone_00091", "bone": "root", "attachment": "mockup-iphone_00091" },
+	{ "name": "mockup-iphone_00092", "bone": "root", "attachment": "mockup-iphone_00092" },
+	{ "name": "mockup-iphone_00093", "bone": "root", "attachment": "mockup-iphone_00093" },
+	{ "name": "mockup-iphone_00094", "bone": "root", "attachment": "mockup-iphone_00094" },
+	{ "name": "mockup-iphone_00095", "bone": "root", "attachment": "mockup-iphone_00095" },
+	{ "name": "mockup-iphone_00096", "bone": "root", "attachment": "mockup-iphone_00096" },
+	{ "name": "mockup-iphone_00097", "bone": "root", "attachment": "mockup-iphone_00097" },
+	{ "name": "mockup-iphone_00098", "bone": "root", "attachment": "mockup-iphone_00098" },
+	{ "name": "mockup-iphone_00099", "bone": "root", "attachment": "mockup-iphone_00099" },
+	{ "name": "mockup-iphone_00100", "bone": "root", "attachment": "mockup-iphone_00100" },
+	{ "name": "mockup-iphone_00101", "bone": "root", "attachment": "mockup-iphone_00101" },
+	{ "name": "mockup-iphone_00102", "bone": "root", "attachment": "mockup-iphone_00102" },
+	{ "name": "mockup-iphone_00103", "bone": "root", "attachment": "mockup-iphone_00103" },
+	{ "name": "mockup-iphone_00104", "bone": "root", "attachment": "mockup-iphone_00104" },
+	{ "name": "mockup-iphone_00105", "bone": "root", "attachment": "mockup-iphone_00105" },
+	{ "name": "mockup-iphone_00106", "bone": "root", "attachment": "mockup-iphone_00106" },
+	{ "name": "mockup-iphone_00107", "bone": "root", "attachment": "mockup-iphone_00107" },
+	{ "name": "mockup-iphone_00108", "bone": "root", "attachment": "mockup-iphone_00108" },
+	{ "name": "mockup-iphone_00109", "bone": "root", "attachment": "mockup-iphone_00109" },
+	{ "name": "mockup-iphone_00110", "bone": "root", "attachment": "mockup-iphone_00110" },
+	{ "name": "mockup-iphone_00111", "bone": "root", "attachment": "mockup-iphone_00111" },
+	{ "name": "mockup-iphone_00112", "bone": "root", "attachment": "mockup-iphone_00112" },
+	{ "name": "mockup-iphone_00113", "bone": "root", "attachment": "mockup-iphone_00113" },
+	{ "name": "mockup-iphone_00114", "bone": "root", "attachment": "mockup-iphone_00114" },
+	{ "name": "mockup-iphone_00115", "bone": "root", "attachment": "mockup-iphone_00115" },
+	{ "name": "mockup-iphone_00116", "bone": "root", "attachment": "mockup-iphone_00116" },
+	{ "name": "mockup-iphone_00117", "bone": "root", "attachment": "mockup-iphone_00117" },
+	{ "name": "mockup-iphone_00118", "bone": "root", "attachment": "mockup-iphone_00118" },
+	{ "name": "mockup-iphone_00119", "bone": "root", "attachment": "mockup-iphone_00119" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"mockup-iphone_00000": {
+				"mockup-iphone_00000": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00001": {
+				"mockup-iphone_00001": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00002": {
+				"mockup-iphone_00002": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00003": {
+				"mockup-iphone_00003": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00004": {
+				"mockup-iphone_00004": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00005": {
+				"mockup-iphone_00005": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00006": {
+				"mockup-iphone_00006": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00007": {
+				"mockup-iphone_00007": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00008": {
+				"mockup-iphone_00008": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00009": {
+				"mockup-iphone_00009": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00010": {
+				"mockup-iphone_00010": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00011": {
+				"mockup-iphone_00011": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00012": {
+				"mockup-iphone_00012": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00013": {
+				"mockup-iphone_00013": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00014": {
+				"mockup-iphone_00014": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00015": {
+				"mockup-iphone_00015": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00016": {
+				"mockup-iphone_00016": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00017": {
+				"mockup-iphone_00017": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00018": {
+				"mockup-iphone_00018": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00019": {
+				"mockup-iphone_00019": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00020": {
+				"mockup-iphone_00020": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00021": {
+				"mockup-iphone_00021": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00022": {
+				"mockup-iphone_00022": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00023": {
+				"mockup-iphone_00023": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00024": {
+				"mockup-iphone_00024": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00025": {
+				"mockup-iphone_00025": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00026": {
+				"mockup-iphone_00026": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00027": {
+				"mockup-iphone_00027": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00028": {
+				"mockup-iphone_00028": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00029": {
+				"mockup-iphone_00029": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00030": {
+				"mockup-iphone_00030": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00031": {
+				"mockup-iphone_00031": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00032": {
+				"mockup-iphone_00032": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00033": {
+				"mockup-iphone_00033": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00034": {
+				"mockup-iphone_00034": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00035": {
+				"mockup-iphone_00035": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00036": {
+				"mockup-iphone_00036": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00037": {
+				"mockup-iphone_00037": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00038": {
+				"mockup-iphone_00038": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00039": {
+				"mockup-iphone_00039": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00040": {
+				"mockup-iphone_00040": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00041": {
+				"mockup-iphone_00041": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00042": {
+				"mockup-iphone_00042": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00043": {
+				"mockup-iphone_00043": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00044": {
+				"mockup-iphone_00044": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00045": {
+				"mockup-iphone_00045": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00046": {
+				"mockup-iphone_00046": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00047": {
+				"mockup-iphone_00047": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00048": {
+				"mockup-iphone_00048": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00049": {
+				"mockup-iphone_00049": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00050": {
+				"mockup-iphone_00050": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00051": {
+				"mockup-iphone_00051": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00052": {
+				"mockup-iphone_00052": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00053": {
+				"mockup-iphone_00053": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00054": {
+				"mockup-iphone_00054": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00055": {
+				"mockup-iphone_00055": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00056": {
+				"mockup-iphone_00056": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00057": {
+				"mockup-iphone_00057": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00058": {
+				"mockup-iphone_00058": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00059": {
+				"mockup-iphone_00059": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00060": {
+				"mockup-iphone_00060": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00061": {
+				"mockup-iphone_00061": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00062": {
+				"mockup-iphone_00062": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00063": {
+				"mockup-iphone_00063": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00064": {
+				"mockup-iphone_00064": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00065": {
+				"mockup-iphone_00065": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00066": {
+				"mockup-iphone_00066": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00067": {
+				"mockup-iphone_00067": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00068": {
+				"mockup-iphone_00068": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00069": {
+				"mockup-iphone_00069": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00070": {
+				"mockup-iphone_00070": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00071": {
+				"mockup-iphone_00071": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00072": {
+				"mockup-iphone_00072": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00073": {
+				"mockup-iphone_00073": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00074": {
+				"mockup-iphone_00074": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00075": {
+				"mockup-iphone_00075": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00076": {
+				"mockup-iphone_00076": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00077": {
+				"mockup-iphone_00077": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00078": {
+				"mockup-iphone_00078": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00079": {
+				"mockup-iphone_00079": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00080": {
+				"mockup-iphone_00080": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00081": {
+				"mockup-iphone_00081": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00082": {
+				"mockup-iphone_00082": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00083": {
+				"mockup-iphone_00083": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00084": {
+				"mockup-iphone_00084": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00085": {
+				"mockup-iphone_00085": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00086": {
+				"mockup-iphone_00086": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00087": {
+				"mockup-iphone_00087": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00088": {
+				"mockup-iphone_00088": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00089": {
+				"mockup-iphone_00089": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00090": {
+				"mockup-iphone_00090": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00091": {
+				"mockup-iphone_00091": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00092": {
+				"mockup-iphone_00092": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00093": {
+				"mockup-iphone_00093": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00094": {
+				"mockup-iphone_00094": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00095": {
+				"mockup-iphone_00095": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00096": {
+				"mockup-iphone_00096": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00097": {
+				"mockup-iphone_00097": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00098": {
+				"mockup-iphone_00098": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00099": {
+				"mockup-iphone_00099": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00100": {
+				"mockup-iphone_00100": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00101": {
+				"mockup-iphone_00101": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00102": {
+				"mockup-iphone_00102": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00103": {
+				"mockup-iphone_00103": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00104": {
+				"mockup-iphone_00104": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00105": {
+				"mockup-iphone_00105": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00106": {
+				"mockup-iphone_00106": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00107": {
+				"mockup-iphone_00107": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00108": {
+				"mockup-iphone_00108": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00109": {
+				"mockup-iphone_00109": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00110": {
+				"mockup-iphone_00110": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00111": {
+				"mockup-iphone_00111": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00112": {
+				"mockup-iphone_00112": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00113": {
+				"mockup-iphone_00113": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00114": {
+				"mockup-iphone_00114": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00115": {
+				"mockup-iphone_00115": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00116": {
+				"mockup-iphone_00116": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00117": {
+				"mockup-iphone_00117": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00118": {
+				"mockup-iphone_00118": { "width": 1920, "height": 1080 }
+			},
+			"mockup-iphone_00119": {
+				"mockup-iphone_00119": { "width": 1920, "height": 1080 }
+			}
+		}
+	}
+],
+"animations": {
+	"animation": {
+		"slots": {
+			"mockup-iphone_00000": {
+				"color": [
+					{ "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.0333, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00001": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.0333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.0667, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00002": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.0333, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.0667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.1, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00003": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.0667, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.1, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.1333, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00004": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.1, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.1333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.1667, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00005": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.1333, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.1667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.2, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00006": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.1667, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.2, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.2333, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00007": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.2, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.2333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.2667, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00008": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.2333, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.2667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.3, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00009": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.2667, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.3, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.3333, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00010": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.3, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.3333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.3667, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00011": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.3333, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.3667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.4, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00012": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.3667, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.4, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.4333, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00013": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.4, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.4333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.4667, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00014": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.4333, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.4667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.5, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00015": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.4667, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.5, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.5333, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00016": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.5, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.5333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.5667, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00017": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.5333, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.5667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.6, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00018": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.5667, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.6, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.6333, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00019": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.6, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.6333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.6667, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00020": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.6333, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.6667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.7, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00021": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.6667, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.7, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.7333, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00022": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.7, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.7333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.7667, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00023": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.7333, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.7667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.8, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00024": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.7667, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.8, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.8333, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00025": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.8, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.8333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.8667, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00026": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.8333, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.8667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.9, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00027": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.8667, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.9, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.9333, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00028": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.9, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.9333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.9667, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00029": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.9333, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.9667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 1, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00030": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.9667, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 1, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 1.0333, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00031": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 1, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 1.0333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 1.0667, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00032": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 1.0333, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 1.0667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 1.1, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00033": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 1.0667, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 1.1, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 1.1333, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00034": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 1.1, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 1.1333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 1.1667, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00035": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 1.1333, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 1.1667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 1.2, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00036": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 1.1667, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 1.2, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 1.2333, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00037": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 1.2, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 1.2333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 1.2667, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00038": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 1.2333, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 1.2667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 1.3, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00039": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 1.2667, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 1.3, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 1.3333, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00040": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 1.3, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 1.3333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 1.3667, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00041": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 1.3333, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 1.3667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 1.4, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00042": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 1.3667, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 1.4, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 1.4333, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00043": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 1.4, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 1.4333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 1.4667, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00044": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 1.4333, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 1.4667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 1.5, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00045": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 1.4667, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 1.5, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 1.5333, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00046": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 1.5, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 1.5333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 1.5667, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00047": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 1.5333, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 1.5667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 1.6, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00048": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 1.5667, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 1.6, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 1.6333, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00049": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 1.6, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 1.6333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 1.6667, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00050": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 1.6333, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 1.6667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 1.7, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00051": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 1.6667, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 1.7, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 1.7333, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00052": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 1.7, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 1.7333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 1.7667, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00053": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 1.7333, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 1.7667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 1.8, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00054": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 1.7667, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 1.8, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 1.8333, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00055": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 1.8, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 1.8333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 1.8667, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00056": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 1.8333, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 1.8667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 1.9, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00057": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 1.8667, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 1.9, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 1.9333, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00058": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 1.9, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 1.9333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 1.9667, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00059": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 1.9333, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 1.9667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 2, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00060": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 1.9667, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 2, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 2.0333, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00061": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 2, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 2.0333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 2.0667, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00062": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 2.0333, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 2.0667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 2.1, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00063": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 2.0667, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 2.1, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 2.1333, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00064": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 2.1, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 2.1333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 2.1667, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00065": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 2.1333, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 2.1667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 2.2, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00066": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 2.1667, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 2.2, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 2.2333, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00067": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 2.2, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 2.2333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 2.2667, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00068": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 2.2333, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 2.2667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 2.3, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00069": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 2.2667, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 2.3, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 2.3333, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00070": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 2.3, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 2.3333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 2.3667, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00071": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 2.3333, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 2.3667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 2.4, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00072": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 2.3667, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 2.4, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 2.4333, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00073": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 2.4, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 2.4333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 2.4667, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00074": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 2.4333, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 2.4667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 2.5, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00075": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 2.4667, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 2.5, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 2.5333, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00076": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 2.5, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 2.5333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 2.5667, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00077": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 2.5333, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 2.5667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 2.6, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00078": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 2.5667, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 2.6, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 2.6333, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00079": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 2.6, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 2.6333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 2.6667, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00080": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 2.6333, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 2.6667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 2.7, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00081": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 2.6667, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 2.7, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 2.7333, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00082": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 2.7, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 2.7333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 2.7667, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00083": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 2.7333, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 2.7667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 2.8, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00084": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 2.7667, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 2.8, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 2.8333, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00085": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 2.8, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 2.8333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 2.8667, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00086": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 2.8333, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 2.8667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 2.9, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00087": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 2.8667, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 2.9, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 2.9333, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00088": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 2.9, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 2.9333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 2.9667, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00089": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 2.9333, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 2.9667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 3, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00090": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 2.9667, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 3, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 3.0333, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00091": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 3, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 3.0333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 3.0667, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00092": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 3.0333, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 3.0667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 3.1, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00093": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 3.0667, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 3.1, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 3.1333, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00094": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 3.1, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 3.1333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 3.1667, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00095": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 3.1333, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 3.1667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 3.2, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00096": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 3.1667, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 3.2, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 3.2333, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00097": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 3.2, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 3.2333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 3.2667, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00098": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 3.2333, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 3.2667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 3.3, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00099": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 3.2667, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 3.3, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 3.3333, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00100": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 3.3, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 3.3333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 3.3667, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00101": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 3.3333, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 3.3667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 3.4, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00102": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 3.3667, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 3.4, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 3.4333, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00103": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 3.4, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 3.4333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 3.4667, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00104": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 3.4333, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 3.4667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 3.5, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00105": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 3.4667, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 3.5, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 3.5333, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00106": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 3.5, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 3.5333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 3.5667, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00107": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 3.5333, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 3.5667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 3.6, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00108": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 3.5667, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 3.6, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 3.6333, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00109": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 3.6, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 3.6333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 3.6667, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00110": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 3.6333, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 3.6667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 3.7, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00111": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 3.6667, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 3.7, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 3.7333, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00112": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 3.7, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 3.7333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 3.7667, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00113": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 3.7333, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 3.7667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 3.8, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00114": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 3.7667, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 3.8, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 3.8333, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00115": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 3.8, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 3.8333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 3.8667, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00116": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 3.8333, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 3.8667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 3.9, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00117": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 3.8667, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 3.9, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 3.9333, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00118": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 3.9, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 3.9333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 3.9667, "color": "ffffff00" }
+				]
+			},
+			"mockup-iphone_00119": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 3.9333, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 3.9667, "color": "ffffffff" }
+				]
+			}
+		}
+	}
+}
+}

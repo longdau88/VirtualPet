@@ -1,0 +1,924 @@
+
+skeleton.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+mockup-iphone_00032
+  rotate: true
+  xy: 2, 416
+  size: 902, 413
+  orig: 1920, 1080
+  offset: 570, 335
+  index: -1
+mockup-iphone_00033
+  rotate: false
+  xy: 2, 1320
+  size: 902, 414
+  orig: 1920, 1080
+  offset: 570, 334
+  index: -1
+mockup-iphone_00034
+  rotate: true
+  xy: 906, 832
+  size: 902, 414
+  orig: 1920, 1080
+  offset: 570, 334
+  index: -1
+mockup-iphone_00035
+  rotate: true
+  xy: 417, 416
+  size: 902, 413
+  orig: 1920, 1080
+  offset: 570, 335
+  index: -1
+mockup-iphone_00097
+  rotate: false
+  xy: 832, 417
+  size: 902, 413
+  orig: 1920, 1080
+  offset: 570, 335
+  index: -1
+mockup-iphone_00098
+  rotate: true
+  xy: 1322, 832
+  size: 902, 413
+  orig: 1920, 1080
+  offset: 570, 335
+  index: -1
+mockup-iphone_00099
+  rotate: false
+  xy: 832, 2
+  size: 902, 413
+  orig: 1920, 1080
+  offset: 570, 335
+  index: -1
+
+skeleton2.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+mockup-iphone_00030
+  rotate: true
+  xy: 1320, 827
+  size: 902, 410
+  orig: 1920, 1080
+  offset: 570, 338
+  index: -1
+mockup-iphone_00031
+  rotate: false
+  xy: 2, 1317
+  size: 902, 412
+  orig: 1920, 1080
+  offset: 570, 336
+  index: -1
+mockup-iphone_00036
+  rotate: true
+  xy: 416, 413
+  size: 902, 411
+  orig: 1920, 1080
+  offset: 570, 337
+  index: -1
+mockup-iphone_00095
+  rotate: false
+  xy: 829, 414
+  size: 902, 411
+  orig: 1920, 1080
+  offset: 570, 337
+  index: -1
+mockup-iphone_00096
+  rotate: true
+  xy: 906, 827
+  size: 902, 412
+  orig: 1920, 1080
+  offset: 570, 336
+  index: -1
+mockup-iphone_00100
+  rotate: true
+  xy: 2, 413
+  size: 902, 412
+  orig: 1920, 1080
+  offset: 570, 336
+  index: -1
+mockup-iphone_00101
+  rotate: false
+  xy: 829, 2
+  size: 902, 410
+  orig: 1920, 1080
+  offset: 570, 338
+  index: -1
+
+skeleton3.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+mockup-iphone_00029
+  rotate: true
+  xy: 412, 407
+  size: 902, 407
+  orig: 1920, 1080
+  offset: 570, 341
+  index: -1
+mockup-iphone_00037
+  rotate: false
+  xy: 2, 1311
+  size: 902, 409
+  orig: 1920, 1080
+  offset: 570, 339
+  index: -1
+mockup-iphone_00038
+  rotate: true
+  xy: 1317, 818
+  size: 902, 406
+  orig: 1920, 1080
+  offset: 570, 342
+  index: -1
+mockup-iphone_00093
+  rotate: false
+  xy: 821, 409
+  size: 902, 407
+  orig: 1920, 1080
+  offset: 570, 341
+  index: -1
+mockup-iphone_00094
+  rotate: true
+  xy: 906, 818
+  size: 902, 409
+  orig: 1920, 1080
+  offset: 570, 339
+  index: -1
+mockup-iphone_00102
+  rotate: true
+  xy: 2, 407
+  size: 902, 408
+  orig: 1920, 1080
+  offset: 570, 340
+  index: -1
+mockup-iphone_00103
+  rotate: false
+  xy: 821, 2
+  size: 902, 405
+  orig: 1920, 1080
+  offset: 570, 343
+  index: -1
+
+skeleton4.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+mockup-iphone_00027
+  rotate: true
+  xy: 1312, 807
+  size: 902, 401
+  orig: 1920, 1080
+  offset: 570, 347
+  index: -1
+mockup-iphone_00028
+  rotate: false
+  xy: 2, 1305
+  size: 902, 404
+  orig: 1920, 1080
+  offset: 570, 344
+  index: -1
+mockup-iphone_00039
+  rotate: true
+  xy: 2, 401
+  size: 902, 403
+  orig: 1920, 1080
+  offset: 570, 345
+  index: -1
+mockup-iphone_00040
+  rotate: false
+  xy: 811, 2
+  size: 902, 399
+  orig: 1920, 1080
+  offset: 570, 349
+  index: -1
+mockup-iphone_00091
+  rotate: true
+  xy: 407, 401
+  size: 902, 402
+  orig: 1920, 1080
+  offset: 570, 346
+  index: -1
+mockup-iphone_00092
+  rotate: true
+  xy: 906, 807
+  size: 902, 404
+  orig: 1920, 1080
+  offset: 570, 344
+  index: -1
+mockup-iphone_00104
+  rotate: false
+  xy: 811, 403
+  size: 902, 402
+  orig: 1920, 1080
+  offset: 570, 346
+  index: -1
+
+skeleton5.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+mockup-iphone_00025
+  rotate: true
+  xy: 1306, 795
+  size: 902, 394
+  orig: 1920, 1080
+  offset: 570, 354
+  index: -1
+mockup-iphone_00026
+  rotate: true
+  xy: 2, 394
+  size: 902, 397
+  orig: 1920, 1080
+  offset: 570, 351
+  index: -1
+mockup-iphone_00041
+  rotate: false
+  xy: 799, 398
+  size: 902, 395
+  orig: 1920, 1080
+  offset: 570, 353
+  index: -1
+mockup-iphone_00089
+  rotate: true
+  xy: 401, 394
+  size: 902, 396
+  orig: 1920, 1080
+  offset: 570, 352
+  index: -1
+mockup-iphone_00090
+  rotate: false
+  xy: 2, 1298
+  size: 902, 399
+  orig: 1920, 1080
+  offset: 570, 349
+  index: -1
+mockup-iphone_00105
+  rotate: true
+  xy: 906, 795
+  size: 902, 398
+  orig: 1920, 1080
+  offset: 570, 350
+  index: -1
+mockup-iphone_00106
+  rotate: false
+  xy: 799, 2
+  size: 902, 394
+  orig: 1920, 1080
+  offset: 570, 354
+  index: -1
+
+skeleton6.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+mockup-iphone_00000
+  rotate: false
+  xy: 2, 1406
+  size: 902, 349
+  orig: 1920, 1080
+  offset: 570, 399
+  index: -1
+mockup-iphone_00001
+  rotate: false
+  xy: 906, 1406
+  size: 902, 349
+  orig: 1920, 1080
+  offset: 570, 399
+  index: -1
+mockup-iphone_00002
+  rotate: false
+  xy: 2, 1055
+  size: 902, 349
+  orig: 1920, 1080
+  offset: 570, 399
+  index: -1
+mockup-iphone_00003
+  rotate: false
+  xy: 906, 1055
+  size: 902, 349
+  orig: 1920, 1080
+  offset: 570, 399
+  index: -1
+mockup-iphone_00061
+  rotate: false
+  xy: 2, 704
+  size: 902, 349
+  orig: 1920, 1080
+  offset: 570, 399
+  index: -1
+mockup-iphone_00062
+  rotate: false
+  xy: 906, 704
+  size: 902, 349
+  orig: 1920, 1080
+  offset: 570, 399
+  index: -1
+mockup-iphone_00063
+  rotate: false
+  xy: 2, 353
+  size: 902, 349
+  orig: 1920, 1080
+  offset: 570, 399
+  index: -1
+mockup-iphone_00064
+  rotate: false
+  xy: 906, 353
+  size: 902, 349
+  orig: 1920, 1080
+  offset: 570, 399
+  index: -1
+mockup-iphone_00065
+  rotate: false
+  xy: 2, 2
+  size: 902, 349
+  orig: 1920, 1080
+  offset: 570, 399
+  index: -1
+mockup-iphone_00066
+  rotate: false
+  xy: 906, 2
+  size: 902, 349
+  orig: 1920, 1080
+  offset: 570, 399
+  index: -1
+
+skeleton7.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+mockup-iphone_00004
+  rotate: false
+  xy: 2, 1060
+  size: 902, 350
+  orig: 1920, 1080
+  offset: 570, 398
+  index: -1
+mockup-iphone_00005
+  rotate: false
+  xy: 906, 1060
+  size: 902, 350
+  orig: 1920, 1080
+  offset: 570, 398
+  index: -1
+mockup-iphone_00006
+  rotate: false
+  xy: 906, 355
+  size: 902, 351
+  orig: 1920, 1080
+  offset: 570, 397
+  index: -1
+mockup-iphone_00058
+  rotate: false
+  xy: 2, 3
+  size: 902, 351
+  orig: 1920, 1080
+  offset: 570, 397
+  index: -1
+mockup-iphone_00059
+  rotate: false
+  xy: 906, 2
+  size: 902, 351
+  orig: 1920, 1080
+  offset: 570, 397
+  index: -1
+mockup-iphone_00060
+  rotate: false
+  xy: 2, 708
+  size: 902, 350
+  orig: 1920, 1080
+  offset: 570, 398
+  index: -1
+mockup-iphone_00067
+  rotate: false
+  xy: 2, 1412
+  size: 902, 349
+  orig: 1920, 1080
+  offset: 570, 399
+  index: -1
+mockup-iphone_00068
+  rotate: false
+  xy: 906, 708
+  size: 902, 350
+  orig: 1920, 1080
+  offset: 570, 398
+  index: -1
+mockup-iphone_00118
+  rotate: false
+  xy: 2, 356
+  size: 902, 350
+  orig: 1920, 1080
+  offset: 570, 398
+  index: -1
+mockup-iphone_00119
+  rotate: false
+  xy: 906, 1412
+  size: 902, 349
+  orig: 1920, 1080
+  offset: 570, 399
+  index: -1
+
+skeleton8.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+mockup-iphone_00007
+  rotate: false
+  xy: 2, 1068
+  size: 902, 352
+  orig: 1920, 1080
+  offset: 570, 396
+  index: -1
+mockup-iphone_00008
+  rotate: false
+  xy: 2, 713
+  size: 902, 353
+  orig: 1920, 1080
+  offset: 570, 395
+  index: -1
+mockup-iphone_00009
+  rotate: false
+  xy: 2, 2
+  size: 902, 354
+  orig: 1920, 1080
+  offset: 570, 394
+  index: -1
+mockup-iphone_00056
+  rotate: false
+  xy: 906, 2
+  size: 902, 354
+  orig: 1920, 1080
+  offset: 570, 394
+  index: -1
+mockup-iphone_00057
+  rotate: false
+  xy: 906, 713
+  size: 902, 353
+  orig: 1920, 1080
+  offset: 570, 395
+  index: -1
+mockup-iphone_00069
+  rotate: false
+  xy: 2, 1422
+  size: 902, 351
+  orig: 1920, 1080
+  offset: 570, 397
+  index: -1
+mockup-iphone_00070
+  rotate: false
+  xy: 906, 1068
+  size: 902, 352
+  orig: 1920, 1080
+  offset: 570, 396
+  index: -1
+mockup-iphone_00071
+  rotate: false
+  xy: 2, 358
+  size: 902, 353
+  orig: 1920, 1080
+  offset: 570, 395
+  index: -1
+mockup-iphone_00116
+  rotate: false
+  xy: 906, 358
+  size: 902, 353
+  orig: 1920, 1080
+  offset: 570, 395
+  index: -1
+mockup-iphone_00117
+  rotate: false
+  xy: 906, 1422
+  size: 902, 351
+  orig: 1920, 1080
+  offset: 570, 397
+  index: -1
+
+skeleton9.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+mockup-iphone_00010
+  rotate: false
+  xy: 906, 1437
+  size: 902, 355
+  orig: 1920, 1080
+  offset: 570, 393
+  index: -1
+mockup-iphone_00011
+  rotate: false
+  xy: 2, 723
+  size: 902, 356
+  orig: 1920, 1080
+  offset: 570, 392
+  index: -1
+mockup-iphone_00012
+  rotate: false
+  xy: 2, 4
+  size: 902, 358
+  orig: 1920, 1080
+  offset: 570, 390
+  index: -1
+mockup-iphone_00013
+  rotate: false
+  xy: 906, 2
+  size: 902, 359
+  orig: 1920, 1080
+  offset: 570, 389
+  index: -1
+mockup-iphone_00054
+  rotate: false
+  xy: 2, 364
+  size: 902, 357
+  orig: 1920, 1080
+  offset: 570, 391
+  index: -1
+mockup-iphone_00055
+  rotate: false
+  xy: 2, 1081
+  size: 902, 355
+  orig: 1920, 1080
+  offset: 570, 393
+  index: -1
+mockup-iphone_00072
+  rotate: false
+  xy: 2, 1438
+  size: 902, 354
+  orig: 1920, 1080
+  offset: 570, 394
+  index: -1
+mockup-iphone_00073
+  rotate: false
+  xy: 906, 1080
+  size: 902, 355
+  orig: 1920, 1080
+  offset: 570, 393
+  index: -1
+mockup-iphone_00074
+  rotate: false
+  xy: 906, 363
+  size: 902, 357
+  orig: 1920, 1080
+  offset: 570, 391
+  index: -1
+mockup-iphone_00115
+  rotate: false
+  xy: 906, 722
+  size: 902, 356
+  orig: 1920, 1080
+  offset: 570, 392
+  index: -1
+
+skeleton10.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+mockup-iphone_00014
+  rotate: false
+  xy: 2, 732
+  size: 902, 361
+  orig: 1920, 1080
+  offset: 570, 387
+  index: -1
+mockup-iphone_00015
+  rotate: false
+  xy: 2, 3
+  size: 902, 363
+  orig: 1920, 1080
+  offset: 570, 385
+  index: -1
+mockup-iphone_00051
+  rotate: false
+  xy: 906, 2
+  size: 902, 363
+  orig: 1920, 1080
+  offset: 570, 385
+  index: -1
+mockup-iphone_00052
+  rotate: false
+  xy: 906, 731
+  size: 902, 361
+  orig: 1920, 1080
+  offset: 570, 387
+  index: -1
+mockup-iphone_00053
+  rotate: false
+  xy: 2, 1456
+  size: 902, 359
+  orig: 1920, 1080
+  offset: 570, 389
+  index: -1
+mockup-iphone_00075
+  rotate: false
+  xy: 906, 1456
+  size: 902, 359
+  orig: 1920, 1080
+  offset: 570, 389
+  index: -1
+mockup-iphone_00076
+  rotate: false
+  xy: 906, 1094
+  size: 902, 360
+  orig: 1920, 1080
+  offset: 570, 388
+  index: -1
+mockup-iphone_00077
+  rotate: false
+  xy: 2, 368
+  size: 902, 362
+  orig: 1920, 1080
+  offset: 570, 386
+  index: -1
+mockup-iphone_00113
+  rotate: false
+  xy: 906, 367
+  size: 902, 362
+  orig: 1920, 1080
+  offset: 570, 386
+  index: -1
+mockup-iphone_00114
+  rotate: false
+  xy: 2, 1095
+  size: 902, 359
+  orig: 1920, 1080
+  offset: 570, 389
+  index: -1
+
+skeleton11.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+mockup-iphone_00024
+  rotate: true
+  xy: 2, 387
+  size: 902, 390
+  orig: 1920, 1080
+  offset: 570, 358
+  index: -1
+mockup-iphone_00042
+  rotate: true
+  xy: 906, 782
+  size: 902, 391
+  orig: 1920, 1080
+  offset: 570, 357
+  index: -1
+mockup-iphone_00043
+  rotate: true
+  xy: 1299, 782
+  size: 902, 388
+  orig: 1920, 1080
+  offset: 570, 360
+  index: -1
+mockup-iphone_00086
+  rotate: false
+  xy: 786, 2
+  size: 902, 387
+  orig: 1920, 1080
+  offset: 570, 361
+  index: -1
+mockup-iphone_00087
+  rotate: true
+  xy: 394, 387
+  size: 902, 390
+  orig: 1920, 1080
+  offset: 570, 358
+  index: -1
+mockup-iphone_00088
+  rotate: false
+  xy: 2, 1291
+  size: 902, 393
+  orig: 1920, 1080
+  offset: 570, 355
+  index: -1
+mockup-iphone_00107
+  rotate: false
+  xy: 786, 391
+  size: 902, 389
+  orig: 1920, 1080
+  offset: 570, 359
+  index: -1
+
+skeleton12.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+mockup-iphone_00016
+  rotate: false
+  xy: 2, 1116
+  size: 902, 366
+  orig: 1920, 1080
+  offset: 570, 382
+  index: -1
+mockup-iphone_00017
+  rotate: false
+  xy: 906, 746
+  size: 902, 368
+  orig: 1920, 1080
+  offset: 570, 380
+  index: -1
+mockup-iphone_00018
+  rotate: false
+  xy: 906, 2
+  size: 902, 371
+  orig: 1920, 1080
+  offset: 570, 377
+  index: -1
+mockup-iphone_00049
+  rotate: false
+  xy: 2, 377
+  size: 902, 368
+  orig: 1920, 1080
+  offset: 570, 380
+  index: -1
+mockup-iphone_00050
+  rotate: false
+  xy: 2, 1484
+  size: 902, 365
+  orig: 1920, 1080
+  offset: 570, 383
+  index: -1
+mockup-iphone_00078
+  rotate: false
+  xy: 906, 1484
+  size: 902, 365
+  orig: 1920, 1080
+  offset: 570, 383
+  index: -1
+mockup-iphone_00079
+  rotate: false
+  xy: 2, 747
+  size: 902, 367
+  orig: 1920, 1080
+  offset: 570, 381
+  index: -1
+mockup-iphone_00080
+  rotate: false
+  xy: 906, 375
+  size: 902, 369
+  orig: 1920, 1080
+  offset: 570, 379
+  index: -1
+mockup-iphone_00111
+  rotate: false
+  xy: 2, 5
+  size: 902, 370
+  orig: 1920, 1080
+  offset: 570, 378
+  index: -1
+mockup-iphone_00112
+  rotate: false
+  xy: 906, 1116
+  size: 902, 366
+  orig: 1920, 1080
+  offset: 570, 382
+  index: -1
+
+skeleton13.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+mockup-iphone_00019
+  rotate: false
+  xy: 2, 1141
+  size: 902, 374
+  orig: 1920, 1080
+  offset: 570, 374
+  index: -1
+mockup-iphone_00020
+  rotate: false
+  xy: 2, 385
+  size: 902, 377
+  orig: 1920, 1080
+  offset: 570, 371
+  index: -1
+mockup-iphone_00021
+  rotate: false
+  xy: 906, 2
+  size: 902, 380
+  orig: 1920, 1080
+  offset: 570, 368
+  index: -1
+mockup-iphone_00046
+  rotate: false
+  xy: 906, 384
+  size: 902, 377
+  orig: 1920, 1080
+  offset: 570, 371
+  index: -1
+mockup-iphone_00047
+  rotate: false
+  xy: 906, 1140
+  size: 902, 374
+  orig: 1920, 1080
+  offset: 570, 374
+  index: -1
+mockup-iphone_00048
+  rotate: false
+  xy: 2, 1517
+  size: 902, 371
+  orig: 1920, 1080
+  offset: 570, 377
+  index: -1
+mockup-iphone_00081
+  rotate: false
+  xy: 906, 1516
+  size: 902, 372
+  orig: 1920, 1080
+  offset: 570, 376
+  index: -1
+mockup-iphone_00082
+  rotate: false
+  xy: 2, 764
+  size: 902, 375
+  orig: 1920, 1080
+  offset: 570, 373
+  index: -1
+mockup-iphone_00083
+  rotate: false
+  xy: 2, 5
+  size: 902, 378
+  orig: 1920, 1080
+  offset: 570, 370
+  index: -1
+mockup-iphone_00110
+  rotate: false
+  xy: 906, 763
+  size: 902, 375
+  orig: 1920, 1080
+  offset: 570, 373
+  index: -1
+
+skeleton14.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+mockup-iphone_00022
+  rotate: false
+  xy: 906, 384
+  size: 902, 383
+  orig: 1920, 1080
+  offset: 570, 365
+  index: -1
+mockup-iphone_00023
+  rotate: false
+  xy: 2, 1153
+  size: 902, 386
+  orig: 1920, 1080
+  offset: 570, 362
+  index: -1
+mockup-iphone_00044
+  rotate: false
+  xy: 906, 1155
+  size: 902, 384
+  orig: 1920, 1080
+  offset: 570, 364
+  index: -1
+mockup-iphone_00045
+  rotate: false
+  xy: 2, 2
+  size: 902, 380
+  orig: 1920, 1080
+  offset: 570, 368
+  index: -1
+mockup-iphone_00084
+  rotate: false
+  xy: 2, 384
+  size: 902, 381
+  orig: 1920, 1080
+  offset: 570, 367
+  index: -1
+mockup-iphone_00085
+  rotate: false
+  xy: 906, 769
+  size: 902, 384
+  orig: 1920, 1080
+  offset: 570, 364
+  index: -1
+mockup-iphone_00108
+  rotate: false
+  xy: 2, 767
+  size: 902, 384
+  orig: 1920, 1080
+  offset: 570, 364
+  index: -1
+mockup-iphone_00109
+  rotate: false
+  xy: 906, 2
+  size: 902, 380
+  orig: 1920, 1080
+  offset: 570, 368
+  index: -1
