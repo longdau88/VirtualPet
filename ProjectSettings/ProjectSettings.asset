@@ -166,7 +166,7 @@ PlayerSettings:
   buildNumber:
     Standalone: 0
     VisionOS: 0
-    iPhone: 0
+    iPhone: 1
     tvOS: 0
   overrideDefaultApplicationIdentifier: 1
   AndroidBundleVersionCode: 1
@@ -591,9 +591,12 @@ PlayerSettings:
   enableInternalProfiler: 0
   logObjCUncaughtExceptions: 1
   enableCrashReportAPI: 0
-  cameraUsageDescription: 
+  cameraUsageDescription: "Tr\u1EA3i nghi\u1EC7m AR c\u1EA7n truy c\u1EADp Camera
+    c\u1EE7a b\u1EA1n."
   locationUsageDescription: 
-  microphoneUsageDescription: 
+  microphoneUsageDescription: "Vui l\xF2ng c\u1EA5p quy\u1EC1n \u0111\u1EC3 s\u1EED
+    d\u1EE5ng t\xEDnh n\u0103ng ch\u1EA5m \u0111i\u1EC3m thu \xE2m t\u1EF1 \u0111\u1ED9ng.
+    Microphone will be used in Speech Recognition."
   bluetoothUsageDescription: 
   macOSTargetOSVersion: 10.13.0
   switchNMETAOverride: 

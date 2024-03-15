@@ -9,6 +9,7 @@ using DG.Tweening;
 using System.Linq;
 using Game;
 using Doozy.Engine.UI;
+using UnityEngine.Android;
 
 namespace MainApp.VirtualFriend
 {
@@ -48,6 +49,9 @@ namespace MainApp.VirtualFriend
 		[Space]
 		[SerializeField] UIView panelResultDialog;
 		[SerializeField] GameController resultDialog;
+		[Space]
+		[SerializeField] UIView panelPermissionAR;
+		[SerializeField] PopupPermissionAR popupPermissionAR;
 		[Space]
 		[SerializeField] Image foodIcon;
 		[SerializeField] Text txtMinusGold;
@@ -115,6 +119,7 @@ namespace MainApp.VirtualFriend
 			panelBtnPlay.Hide();
 			panelChooseGame.Hide();
 			panelResultDialog.Hide();
+			panelPermissionAR.Hide();
 
 			countGold = 0;
 
@@ -167,30 +172,58 @@ namespace MainApp.VirtualFriend
 			TweenControl.GetInstance().DelayCall(this.transform, 3f, () =>
 			{
 				LoadingView.Instance.HideLoading();
-				if (IsCreateGameApp("4"))
+
+#if UNITY_IOS
+					if (!Application.HasUserAuthorization(UserAuthorization.WebCam))
+					{
+						ShowPopupPermissionAR(() =>
+						{
+							StartGame();
+						});
+					}
+					else 
+						StartGame();
+#endif
+
+#if UNITY_ANDROID
+				if (!Permission.HasUserAuthorizedPermission(Permission.Camera))
 				{
-					petState = PetState.Normal;
-					SaveLastScreenPrefabs((int)petState);
-
-					SaveCreateGameApp("4");
-					SaveGoldPlayer(countGold);
-
-					TimeManager.InitData(true);
-
-					TimeManager.OnUpdateTime = UpdateValueTime;
+					ShowPopupPermissionAR(() =>
+					{
+						StartGame();
+					});
 				}
 				else
-				{
-					GetGoldPlayer();
-
-					petState = GetLastScreenPrefabs();
-
-					TimeManager.InitData(false);
-
-					TimeManager.OnUpdateTime = UpdateValueTime;
-				}
+					StartGame();
+#endif
 			});
         }
+
+		private void StartGame()
+        {
+			if (IsCreateGameApp("4"))
+			{
+				petState = PetState.Normal;
+				SaveLastScreenPrefabs((int)petState);
+
+				SaveCreateGameApp("4");
+				SaveGoldPlayer(countGold);
+
+				TimeManager.InitData(true);
+
+				TimeManager.OnUpdateTime = UpdateValueTime;
+			}
+			else
+			{
+				GetGoldPlayer();
+
+				petState = GetLastScreenPrefabs();
+
+				TimeManager.InitData(false);
+
+				TimeManager.OnUpdateTime = UpdateValueTime;
+			}
+		}
 
 		#region UI SavePlayerPrefs
 		public bool IsCreateGameApp(string s)
@@ -732,6 +765,19 @@ namespace MainApp.VirtualFriend
 		{
 			isShowPopup = false;
 			panelResultDialog.Hide();
+		}
+
+		public void ShowPopupPermissionAR(Action onConfirm)
+		{
+			isShowPopup = true;
+			panelPermissionAR.Show();
+
+			popupPermissionAR.InitPopup(onConfirm);
+		}
+		public void HidePopupPermissionAR()
+		{
+			isShowPopup = false;
+			panelPermissionAR.Hide();
 		}
 
 		public void UpdateValueTime(float timeHungry, float timeAsleep, float timeDirty)
