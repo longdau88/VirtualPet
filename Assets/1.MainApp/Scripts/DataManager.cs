@@ -9,7 +9,13 @@ using UnityEngine.SceneManagement;
 public class DataManager : MonoBehaviour
 {
     public static DataManager Instance { get; private set; }
+    public bool isTestGame;
+    [Space]
     public List<GameInfo> lstGame;
+    [Space]
+    [HideInInspector]
+    public bool IsShowOtherScene;
+
 
     private void Awake()
     {
@@ -24,9 +30,9 @@ public class DataManager : MonoBehaviour
 
         async.completed += (complete) =>
         {
-            Debug.Log("Load asset from local");
-            if (onDone != null)
-                onDone.Invoke();
+            IsShowOtherScene = true;
+            VirtualPetManager.Instance.ShowMainCanvas(false);
+            if (onDone != null) onDone?.Invoke();
         };
     }
 
@@ -38,19 +44,28 @@ public class DataManager : MonoBehaviour
         {
             Resources.UnloadUnusedAssets();
 
-            if (onComplete != null)
-                onComplete?.Invoke();
+            VirtualPetManager.Instance.ShowMainApp(true);
+
+            LoadingView.Instance.ShowLoading(1f, () =>
+            {
+                if (onComplete != null) onComplete?.Invoke();
+            });
         };
+        VirtualPetManager.Instance.ShowMainCanvas(true);
     }
 
     public void LoadSceneArAsync(Action assetDownloaded = null)
     {
         AudioController.Instance.PauseAudioBgApp();
-        LoadingView.Instance.ShowLoading(true);
         StartCoroutine(IEGetSceneAr(() =>
         {
-            if (assetDownloaded != null)
-                assetDownloaded?.Invoke();
+            IsShowOtherScene = true;
+            VirtualPetManager.Instance.ShowMainCanvas(false);
+            LoadingView.Instance.ShowLoading(1f, () =>
+            {
+                if (assetDownloaded != null)
+                    assetDownloaded?.Invoke();
+            });
         }));
     }
     private IEnumerator IEGetSceneAr(Action assetDownloaded)
@@ -59,19 +74,45 @@ public class DataManager : MonoBehaviour
 
         sceneArLoad.completed += (onDone) =>
         {
-            LoadingView.Instance.SetValue(0.95f);
-
-            LoadingView.Instance.HideLoading();
-
             if (assetDownloaded != null)
                 assetDownloaded?.Invoke();
         };
 
         while (!sceneArLoad.isDone)
         {
-            if (sceneArLoad.progress <= 0.9f)
-                LoadingView.Instance.SetValue(sceneArLoad.progress);
             yield return null;
         }
     }
+
+    public void UnloadSceneGame(string name, bool hideMainCanvas = false, System.Action onComplete = null, bool UnloadImmediate = false, bool forceToShowCamera = false)
+    {
+        if (UnloadImmediate) UnLoadSceneGameImmediate(name, hideMainCanvas, onComplete, forceToShowCamera);
+        else
+        {
+            //ShowPopupExitGame(name);
+        }
+    }
+    public void UnLoadSceneGameImmediate(string name, bool hideMainCanvas = false, System.Action onComplete = null, bool forceToShowCamera = false)
+    {
+        TweenControl.GetInstance().KillAll();
+        AudioController.Instance.StopAudioBgGame();
+        AudioController.Instance.StopAllAudio();
+
+        Debug.Log("Scene name = " + name);
+        SceneManager.UnloadSceneAsync(name).completed += (oper) =>
+        {
+            IsShowOtherScene = false;
+
+            Resources.UnloadUnusedAssets();
+
+            LoadingView.Instance.ShowLoading(1f, () =>
+            {
+                VirtualPetManager.Instance.ShowMainApp(true);
+                if (onComplete != null) onComplete?.Invoke();
+            });
+        };
+
+        VirtualPetManager.Instance.ShowMainCanvas(true);
+    }
+
 }

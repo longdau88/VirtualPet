@@ -3,6 +3,7 @@ using Game;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 namespace MainApp.VirtualFriend
@@ -123,19 +124,39 @@ namespace MainApp.VirtualFriend
         {
             GameAudio.Instance.PlaySoundClickButton();
 
-            assetScene = null;
+            if (DataManager.Instance.isTestGame)
+            {
+                LoadingView.Instance.ShowLoading(1f, () =>
+                {
+                    var async = SceneManager.LoadSceneAsync(1, LoadSceneMode.Additive);
+                    async.completed += (obj) =>
+                    {
+                        DataManager.Instance.IsShowOtherScene = true;
+                        VirtualPetManager.Instance.ShowMainApp(false);
+                        gameObject.GetComponent<UIView>().Hide();
+                    };
+                });
+            }
+            else
+            {
+                assetScene = null;
 
 #if UNITY_IOS
 		assetScene = lstGame[index].ios;
 #endif
 #if UNITY_ANDROID
-		assetScene = lstGame[index].game_android;
+                assetScene = lstGame[index].game_android;
 #endif
 
-            DataManager.Instance.LoadScenes(assetScene, () =>
-            {
-                gameObject.GetComponent<UIView>().Hide();
-            });
+                LoadingView.Instance.ShowLoading(1f, () =>
+                {
+                    DataManager.Instance.LoadScenes(assetScene, () =>
+                    {
+                        VirtualPetManager.Instance.ShowMainApp(false);
+                        gameObject.GetComponent<UIView>().Hide();
+                    });
+                });
+            }
         }
     }
 }

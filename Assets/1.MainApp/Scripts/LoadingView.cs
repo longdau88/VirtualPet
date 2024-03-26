@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using Doozy.Engine.UI;
 using DG.Tweening;
+using System;
 
 namespace MainApp
 {
@@ -28,6 +29,21 @@ namespace MainApp
 			loadingView.gameObject.SetActive(false);
 		}
 
+		public void ShowLoading(float time, Action onDone = null)
+        {
+			ShowLoading(true);
+
+			DOVirtual.Float(0, 1, time, value =>
+			{
+				SetValue(value);
+			});
+			TweenControl.GetInstance().DelayCall(this.transform, time, () =>
+			{
+				HideLoading();
+				if (onDone != null)
+					onDone?.Invoke();
+			});
+		}
 		public void ShowLoading(bool isLoadingAR = false)
 		{
 			if (loadingView.IsShowing) return;

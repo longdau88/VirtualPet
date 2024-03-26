@@ -19,9 +19,12 @@ namespace MainApp.VirtualFriend
 		[SerializeField] Light light;
 		[SerializeField] Light lamp;
 		[Header("Screen")]
+		[SerializeField] GameObject ScreenMainApp;
 		[SerializeField] GameObject mainScreen;
 		[SerializeField] GameObject bathRoom;
 		[SerializeField] GameObject bedRoom;
+		[Space]
+		[SerializeField] Camera mainCamera;
 		[Header("Washing")]
 		[SerializeField] ParticleSystem waterShower;
 		[SerializeField] ParticleSystem bubblesFx;
@@ -105,9 +108,23 @@ namespace MainApp.VirtualFriend
 
 		public int countGold;
 
+		Canvas ThisCanvas;
+		AudioListener audioListener;
+
+
+		public void ShowMainCanvas(bool isDisable)
+		{
+			ThisCanvas.enabled = isDisable;
+			mainCamera.enabled = isDisable;
+			audioListener.enabled = isDisable;
+		}
+
 		private void Awake()
 		{
 			Instance = this;
+
+			ThisCanvas = GetComponent<Canvas>();
+			audioListener = mainCamera.GetComponent<AudioListener>();
 		}
 
 		void Start()
@@ -115,6 +132,8 @@ namespace MainApp.VirtualFriend
 			TimeManager = TimePetManager.Instance;
 
 			foodIcon.transform.localScale = Vector3.zero;
+
+			ShowMainApp(true);
 
 			panelBtnPlay.Hide();
 			panelChooseGame.Hide();
@@ -741,8 +760,17 @@ namespace MainApp.VirtualFriend
 		}
 		private void OnClickPlayAR()
 		{
-			DataManager.Instance.LoadSceneArAsync();
+			DataManager.Instance.LoadSceneArAsync(() =>
+			{
+				ShowMainApp(false);
+			});
 		}
+
+		public void ShowMainApp(bool iShow)
+        {
+			ScreenMainApp.SetActive(iShow);
+		}
+
 		#endregion
 
 		public void ShowPanelChooseGame()
@@ -779,7 +807,6 @@ namespace MainApp.VirtualFriend
 			isShowPopup = false;
 			panelPermissionAR.Hide();
 		}
-
 		public void UpdateValueTime(float timeHungry, float timeAsleep, float timeDirty)
 		{
 			Debug.Log("Update value  " + timeHungry + "  " + timeAsleep + "   " + timeDirty);
