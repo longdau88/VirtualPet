@@ -1,0 +1,146 @@
+
+character_run_03.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+chan phai
+  rotate: false
+  xy: 211, 76
+  size: 55, 116
+  orig: 55, 116
+  offset: 0, 0
+  index: -1
+chan trai
+  rotate: false
+  xy: 211, 76
+  size: 55, 116
+  orig: 55, 116
+  offset: 0, 0
+  index: -1
+co ao
+  rotate: false
+  xy: 268, 54
+  size: 90, 37
+  orig: 90, 37
+  offset: 0, 0
+  index: -1
+dau
+  rotate: true
+  xy: 295, 250
+  size: 256, 219
+  orig: 256, 219
+  offset: 0, 0
+  index: -1
+dep phai
+  rotate: true
+  xy: 103, 4
+  size: 48, 20
+  orig: 48, 20
+  offset: 0, 0
+  index: -1
+dep trai
+  rotate: true
+  xy: 103, 4
+  size: 48, 20
+  orig: 48, 20
+  offset: 0, 0
+  index: -1
+egg green
+  rotate: false
+  xy: 324, 15
+  size: 32, 37
+  orig: 32, 37
+  offset: 0, 0
+  index: -1
+egg purple
+  rotate: false
+  xy: 289, 13
+  size: 33, 39
+  orig: 33, 39
+  offset: 0, 0
+  index: -1
+egg red copy
+  rotate: false
+  xy: 358, 15
+  size: 32, 37
+  orig: 32, 37
+  offset: 0, 0
+  index: -1
+gio
+  rotate: true
+  xy: 268, 93
+  size: 99, 90
+  orig: 99, 90
+  offset: 0, 0
+  index: -1
+gio mask
+  rotate: false
+  xy: 187, 10
+  size: 100, 42
+  orig: 100, 42
+  offset: 0, 0
+  index: -1
+mat phai
+  rotate: false
+  xy: 157, 8
+  size: 28, 44
+  orig: 28, 44
+  offset: 0, 0
+  index: -1
+mat trai
+  rotate: false
+  xy: 125, 5
+  size: 30, 47
+  orig: 30, 47
+  offset: 0, 0
+  index: -1
+mat trang p
+  rotate: true
+  xy: 211, 60
+  size: 14, 13
+  orig: 14, 13
+  offset: 0, 0
+  index: -1
+mat trang t
+  rotate: true
+  xy: 226, 60
+  size: 14, 13
+  orig: 14, 13
+  offset: 0, 0
+  index: -1
+mieng
+  rotate: false
+  xy: 295, 212
+  size: 34, 36
+  orig: 34, 36
+  offset: 0, 0
+  index: -1
+tay 1
+  rotate: false
+  xy: 2, 2
+  size: 99, 50
+  orig: 99, 50
+  offset: 0, 0
+  index: -1
+tay 2
+  rotate: true
+  xy: 360, 160
+  size: 88, 55
+  orig: 88, 55
+  offset: 0, 0
+  index: -1
+toc sau
+  rotate: true
+  xy: 2, 194
+  size: 312, 291
+  orig: 312, 291
+  offset: 0, 0
+  index: -1
+vay
+  rotate: false
+  xy: 2, 54
+  size: 207, 138
+  orig: 207, 138
+  offset: 0, 0
+  index: -1

@@ -18,7 +18,10 @@ namespace MainApp.VirtualFriend
 		public static VirtualPetManager Instance { get; private set; }
 		[SerializeField] Light light;
 		[SerializeField] Light lamp;
+		[Space]
+		public TimePetManager TimeManager;
 		[Header("Screen")]
+		[SerializeField] GameObject UI;
 		[SerializeField] GameObject ScreenMainApp;
 		[SerializeField] GameObject mainScreen;
 		[SerializeField] GameObject bathRoom;
@@ -43,17 +46,15 @@ namespace MainApp.VirtualFriend
 		[SerializeField] Button btnGoToSleep;
 		[SerializeField] Button btnLight;
 		[Space]
-		[SerializeField] UIView panelBtnPlay;
+		public UIView panelBtnPlay;
 		[SerializeField] Button btnPlayGame;
 		[SerializeField] Button btnPlayAR;
 		[Space]
 		[SerializeField] UIView panelChooseGame;
 		[SerializeField] ChooseGameView chooseGameView;
 		[Space]
-		[SerializeField] UIView panelResultDialog;
 		[SerializeField] GameController resultDialog;
 		[Space]
-		[SerializeField] UIView panelPermissionAR;
 		[SerializeField] PopupPermissionAR popupPermissionAR;
 		[Space]
 		[SerializeField] Image foodIcon;
@@ -83,6 +84,8 @@ namespace MainApp.VirtualFriend
 		[Space]
 		[SerializeField] List<TimeInVirtualPet> lstTimeStart;
 		[SerializeField] List<TimeInVirtualPet> lstTimeEnd;
+		[Space]
+		[SerializeField] GameObject ARPrefab;
 
 		private PetState petState;
 
@@ -101,7 +104,6 @@ namespace MainApp.VirtualFriend
 		public bool isFreeToRepeat { get; private set; }
 		bool isRecording;
 
-		TimePetManager TimeManager;
 		MyPetController myPet;
 
 		bool isWashing;
@@ -125,20 +127,20 @@ namespace MainApp.VirtualFriend
 
 			ThisCanvas = GetComponent<Canvas>();
 			audioListener = mainCamera.GetComponent<AudioListener>();
+			DontDestroyOnLoad(gameObject);
+			SetSystemConfig();
 		}
 
 		void Start()
 		{
-			TimeManager = TimePetManager.Instance;
-
 			foodIcon.transform.localScale = Vector3.zero;
 
 			ShowMainApp(true);
 
 			panelBtnPlay.Hide();
 			panelChooseGame.Hide();
-			panelResultDialog.Hide();
-			panelPermissionAR.Hide();
+			resultDialog.gameObject.transform.localScale = Vector3.zero;
+			popupPermissionAR.gameObject.transform.localScale = Vector3.zero;
 
 			countGold = 0;
 
@@ -151,6 +153,68 @@ namespace MainApp.VirtualFriend
 			InitData();
 
 			chooseGameView.InitPanelChooseGame(DataManager.Instance.lstGame);
+		}
+
+		int targetFrameRate;
+		private void SetSystemConfig()
+		{
+			var valueGraphicMemory = (float)SystemInfo.graphicsMemorySize / 1024f;
+			var valueSystemMemory = (float)SystemInfo.systemMemorySize / 1024f;
+
+			valueGraphicMemory = Mathf.RoundToInt(valueGraphicMemory);
+			valueSystemMemory = Mathf.RoundToInt(valueSystemMemory);
+
+#if UNITY_EDITOR
+			Debug.Log("Card: " + valueGraphicMemory + " --- RAM: " + valueSystemMemory);
+#endif
+
+#if UNITY_ANDROID
+			if (valueSystemMemory >= 6)
+			{
+				targetFrameRate = 60;
+			}
+			else if (valueSystemMemory >= 4)
+			{
+				targetFrameRate = 55;
+				//MainView.youtubeControl.videoQuality = YoutubeSettings.YoutubeVideoQuality.STANDARD;
+			}
+			else if (valueSystemMemory >= 2)
+			{
+				targetFrameRate = 40;
+			}
+			else
+			{
+				targetFrameRate = 35;
+			}
+#elif UNITY_IOS
+				if (valueSystemMemory >= 4)
+				{
+					targetFrameRate = 60;
+				}
+				else if (valueSystemMemory >= 3)
+				{
+					targetFrameRate = 55;
+				}
+				else if (valueSystemMemory >= 2)
+				{
+					targetFrameRate = 55;
+				}
+				else if (valueSystemMemory > 1)
+				{
+					targetFrameRate = 50;
+				}
+				else
+				{
+					targetFrameRate = 45;
+				}
+#endif
+
+			SetTargetFrameRate();
+		}
+
+		public void SetTargetFrameRate()
+		{
+			Application.targetFrameRate = targetFrameRate;
 		}
 
 		private void AddListener()
@@ -182,50 +246,42 @@ namespace MainApp.VirtualFriend
 
 		private void InitData()
         {
-			LoadingView.Instance.ShowLoading(true);
-
-			DOVirtual.Float(0, 1, 3f, value =>
+			LoadingView.Instance.ShowLoading(3f, () =>
 			{
-				LoadingView.Instance.SetValue(value);
-			});
-			TweenControl.GetInstance().DelayCall(this.transform, 3f, () =>
-			{
-				LoadingView.Instance.HideLoading();
-
-#if UNITY_IOS
-					if (!Application.HasUserAuthorization(UserAuthorization.WebCam))
-					{
-						ShowPopupPermissionAR(() =>
-						{
-							StartGame();
-						});
-					}
-					else 
-						StartGame();
+#if UNITY_EDITOR
+                StartGame();
+#elif UNITY_ANDROID
+								if (!Permission.HasUserAuthorizedPermission(Permission.Camera))
+								{
+									ShowPopupPermissionAR(() =>
+									{
+										StartGame();
+									});
+								}
+								else
+									StartGame();
+#elif UNITY_IOS
+								if (!Application.HasUserAuthorization(UserAuthorization.WebCam))
+									{
+										ShowPopupPermissionAR(() =>
+										{
+											StartGame();
+										});
+									}
+									else 
+										StartGame();
 #endif
-
-#if UNITY_ANDROID
-				if (!Permission.HasUserAuthorizedPermission(Permission.Camera))
-				{
-					ShowPopupPermissionAR(() =>
-					{
-						StartGame();
-					});
-				}
-				else
-					StartGame();
-#endif
-			});
+            });
         }
 
 		private void StartGame()
         {
-			if (IsCreateGameApp("4"))
+			if (IsCreateGameApp("6"))
 			{
 				petState = PetState.Normal;
 				SaveLastScreenPrefabs((int)petState);
 
-				SaveCreateGameApp("4");
+				SaveCreateGameApp("6");
 				SaveGoldPlayer(countGold);
 
 				TimeManager.InitData(true);
@@ -234,11 +290,11 @@ namespace MainApp.VirtualFriend
 			}
 			else
 			{
+				TimeManager.InitData(false);
+
 				GetGoldPlayer();
 
 				petState = GetLastScreenPrefabs();
-
-				TimeManager.InitData(false);
 
 				TimeManager.OnUpdateTime = UpdateValueTime;
 			}
@@ -277,19 +333,12 @@ namespace MainApp.VirtualFriend
 		{
 			countGold = value;
 			txtGoldPlayer.text = countGold.ToString();
-			PlayerPrefs.SetInt(StaticConfig.GOLD_PLAYER_APP, countGold);
-			PlayerPrefs.Save();
+			TimeManager.data.gold = value;
+			TimeManager.SaveData();
 		}
 		public int GetGoldPlayer()
 		{
-			if (PlayerPrefs.HasKey(StaticConfig.GOLD_PLAYER_APP))
-			{
-				countGold = PlayerPrefs.GetInt(StaticConfig.GOLD_PLAYER_APP);
-			}
-            else
-            {
-				SaveGoldPlayer(0);
-			}
+			countGold = TimeManager.data.gold;
 			txtGoldPlayer.text = countGold.ToString();
 			return countGold;
 		}
@@ -442,7 +491,7 @@ namespace MainApp.VirtualFriend
 
 		public void SetFreeToRepeat(bool isFree)
 		{
-			if (TimeManager.data.lastState != PetState.Eat && TimeManager.data.lastState != PetState.Normal)
+			if (TimeManager.data.lastState != PetState.Eat)
 			{
 				isFreeToRepeat = false;
 				micInput.OnNotRecord();
@@ -454,7 +503,7 @@ namespace MainApp.VirtualFriend
 
 		public void SetFreeToAttack(bool isFree)
 		{
-			if (TimeManager.data.lastState != PetState.Eat && TimeManager.data.lastState != PetState.Normal)
+			if (TimeManager.data.lastState != PetState.Eat)
 			{
 				isFreeToAttack = false;
 				return;
@@ -763,12 +812,14 @@ namespace MainApp.VirtualFriend
 			DataManager.Instance.LoadSceneArAsync(() =>
 			{
 				ShowMainApp(false);
+				ARController.Instance.InitARViewVocab(ARPrefab);
 			});
 		}
 
 		public void ShowMainApp(bool iShow)
         {
 			ScreenMainApp.SetActive(iShow);
+			UI.SetActive(iShow);
 		}
 
 		#endregion
@@ -784,28 +835,42 @@ namespace MainApp.VirtualFriend
 			panelChooseGame.Hide();
 		}
 
-		public void ShowPanelResultDialog()
+		public void ShowPanelResultDialog(int score, string sceneName)
 		{
 			isShowPopup = true;
-			panelResultDialog.Show();
+
+			DataManager.Instance.UnloadSceneGame(sceneName, true, () =>
+			{
+				TweenControl.GetInstance().Scale(resultDialog.gameObject, Vector3.one, 0.2f, () =>
+				{
+					resultDialog.ShowResult(score);
+				});
+			}, true, true);
 		}
-		public void HidePanelResultDialog()
+		public void HidePanelResultDialog(Action onConfirm = null)
 		{
 			isShowPopup = false;
-			panelResultDialog.Hide();
+			TweenControl.GetInstance().Scale(resultDialog.gameObject, Vector3.zero, 0.2f, () =>
+			{
+				if (onConfirm != null) onConfirm?.Invoke();
+			});
 		}
 
 		public void ShowPopupPermissionAR(Action onConfirm)
 		{
 			isShowPopup = true;
-			panelPermissionAR.Show();
-
-			popupPermissionAR.InitPopup(onConfirm);
+			TweenControl.GetInstance().Scale(popupPermissionAR.gameObject, Vector3.one, 0.2f, () =>
+			{
+				popupPermissionAR.InitPopup(onConfirm);
+			});
 		}
 		public void HidePopupPermissionAR()
 		{
 			isShowPopup = false;
-			panelPermissionAR.Hide();
+			TweenControl.GetInstance().Scale(popupPermissionAR.gameObject, Vector3.zero, 0.2f, () =>
+			{
+
+			});
 		}
 		public void UpdateValueTime(float timeHungry, float timeAsleep, float timeDirty)
 		{

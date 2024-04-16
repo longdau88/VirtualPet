@@ -20,6 +20,7 @@ public class DataManager : MonoBehaviour
     private void Awake()
     {
         Instance = this;
+        DontDestroyOnLoad(gameObject);
     }
 
     private AssetBundle assetScene;
@@ -35,7 +36,17 @@ public class DataManager : MonoBehaviour
             if (onDone != null) onDone?.Invoke();
         };
     }
+    public void LoadScenes(string _assetScene, System.Action onDone = null)
+    {
+        var async = SceneManager.LoadSceneAsync(_assetScene, LoadSceneMode.Additive);
 
+        async.completed += (complete) =>
+        {
+            IsShowOtherScene = true;
+            VirtualPetManager.Instance.ShowMainCanvas(false);
+            if (onDone != null) onDone?.Invoke();
+        };
+    }
     public void UnloadSceneAr(Action onComplete = null)
     {
         AudioController.Instance.UnPauseAudioBgApp();
@@ -89,7 +100,7 @@ public class DataManager : MonoBehaviour
         if (UnloadImmediate) UnLoadSceneGameImmediate(name, hideMainCanvas, onComplete, forceToShowCamera);
         else
         {
-            //ShowPopupExitGame(name);
+            UnLoadSceneGameImmediate(name, hideMainCanvas, onComplete, forceToShowCamera);
         }
     }
     public void UnLoadSceneGameImmediate(string name, bool hideMainCanvas = false, System.Action onComplete = null, bool forceToShowCamera = false)

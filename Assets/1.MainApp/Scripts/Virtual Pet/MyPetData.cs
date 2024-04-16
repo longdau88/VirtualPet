@@ -9,6 +9,8 @@ namespace MainApp.VirtualFriend
 	[Serializable]
 	public class MyPetData
 	{
+		public int gold;
+
 		public string lastTimeEat;
 		public string lastTimeSleep;
 		public string lastTimeToilet;

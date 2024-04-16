@@ -1,14 +1,14 @@
 fileFormatVersion: 2
 guid: b0204873c7c04e741af7696270eceae1
 ModelImporter:
-  serializedVersion: 19301
+  serializedVersion: 22200
   internalIDToNameTable:
   - first:
       74: 1827226128182048838
-    second: idle_1
+    second: idle
   - first:
       74: 3377290265148058090
-    second: idle_2
+    second: Idle
   - first:
       74: -4377935982194994116
     second: laugh
@@ -59,10 +59,10 @@ ModelImporter:
     second: sad
   - first:
       74: 853472393951931801
-    second: asleep_1
+    second: asleep
   - first:
       74: 3631718915459439001
-    second: asleep_2
+    second: Asleep
   - first:
       74: 913922485744145797
     second: wakeup
@@ -80,6 +80,7 @@ ModelImporter:
     bakeSimulation: 0
     resampleCurves: 1
     optimizeGameObjects: 1
+    removeConstantScaleCurves: 0
     motionNodeName: 
     rigImportErrors: 
     rigImportWarnings: 
@@ -98,7 +99,7 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: idle_1
+      name: idle
       takeName: Take 001
       internalID: 0
       firstFrame: 9
@@ -127,7 +128,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 9
     - serializedVersion: 16
-      name: idle_2
+      name: Idle
       takeName: Take 001
       internalID: 0
       firstFrame: 120
@@ -620,7 +621,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 9
     - serializedVersion: 16
-      name: asleep_1
+      name: asleep
       takeName: Take 001
       internalID: 0
       firstFrame: 2060
@@ -649,7 +650,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 9
     - serializedVersion: 16
-      name: asleep_2
+      name: Asleep
       takeName: Take 001
       internalID: 0
       firstFrame: 2060
@@ -743,27 +744,35 @@ ModelImporter:
     addColliders: 0
     useSRGBMaterialColor: 1
     sortHierarchyByName: 1
+    importPhysicalCameras: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
     importLights: 1
+    nodeNameCollisionStrategy: 0
     fileIdsGeneration: 2
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
     keepQuads: 0
     weldVertices: 1
+    bakeAxisConversion: 0
     preserveHierarchy: 0
     skinWeightsMode: 0
     maxBonesPerVertex: 4
     minBoneWeight: 0.001
+    optimizeBones: 1
     meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 0
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 1
+    strictVertexDataChecks: 0
   tangentSpace:
     normalSmoothAngle: 100
     normalImportMode: 0
@@ -795,6 +804,9 @@ ModelImporter:
   animationType: 2
   humanoidOversampling: 1
   avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
+  importBlendShapeDeformPercent: 0
+  remapMaterialsIfMaterialImportModeIsNone: 1
   additionalBone: 0
   userData: 
   assetBundleName: 

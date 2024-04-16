@@ -1,0 +1,202 @@
+
+Mascot 3p4 cd.png
+size: 409,523
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1_Arrm-L
+  rotate: true
+  xy: 114, 46
+  size: 62, 44
+  orig: 62, 45
+  offset: 0, 1
+  index: -1
+1_Arrm-R
+  rotate: true
+  xy: 114, 110
+  size: 61, 45
+  orig: 62, 45
+  offset: 0, 0
+  index: -1
+1_body
+  rotate: false
+  xy: 172, 170
+  size: 133, 158
+  orig: 133, 158
+  offset: 0, 0
+  index: -1
+1_eye-L
+  rotate: true
+  xy: 258, 330
+  size: 17, 18
+  orig: 17, 18
+  offset: 0, 0
+  index: -1
+1_eye-R
+  rotate: true
+  xy: 342, 331
+  size: 16, 18
+  orig: 16, 18
+  offset: 0, 0
+  index: -1
+1_head
+  rotate: true
+  xy: 2, 330
+  size: 191, 160
+  orig: 191, 160
+  offset: 0, 0
+  index: -1
+1_leg-P
+  rotate: false
+  xy: 164, 330
+  size: 39, 14
+  orig: 39, 14
+  offset: 0, 0
+  index: -1
+1_leg-R
+  rotate: false
+  xy: 205, 330
+  size: 39, 14
+  orig: 39, 14
+  offset: 0, 0
+  index: -1
+1_mo_duoi
+  rotate: false
+  xy: 297, 331
+  size: 21, 16
+  orig: 21, 16
+  offset: 0, 0
+  index: -1
+1_mo_tren
+  rotate: false
+  xy: 324, 12
+  size: 39, 18
+  orig: 39, 18
+  offset: 0, 0
+  index: -1
+2_Arm_L
+  rotate: false
+  xy: 160, 7
+  size: 59, 43
+  orig: 59, 43
+  offset: 0, 0
+  index: -1
+2_Arm_R
+  rotate: false
+  xy: 221, 7
+  size: 59, 43
+  orig: 59, 43
+  offset: 0, 0
+  index: -1
+2_Leg-L
+  rotate: false
+  xy: 114, 25
+  size: 40, 19
+  orig: 40, 19
+  offset: 0, 0
+  index: -1
+2_Leg-R
+  rotate: false
+  xy: 282, 11
+  size: 40, 19
+  orig: 40, 19
+  offset: 0, 0
+  index: -1
+2_body
+  rotate: true
+  xy: 286, 32
+  size: 136, 114
+  orig: 136, 114
+  offset: 0, 0
+  index: -1
+2_eye-L
+  rotate: false
+  xy: 278, 330
+  size: 17, 17
+  orig: 17, 17
+  offset: 0, 0
+  index: -1
+2_eye-R
+  rotate: false
+  xy: 365, 12
+  size: 18, 18
+  orig: 18, 18
+  offset: 0, 0
+  index: -1
+2_head
+  rotate: false
+  xy: 2, 173
+  size: 168, 155
+  orig: 168, 155
+  offset: 0, 0
+  index: -1
+2_mo_duoi
+  rotate: false
+  xy: 320, 331
+  size: 20, 16
+  orig: 20, 16
+  offset: 0, 0
+  index: -1
+2_mo_tren
+  rotate: false
+  xy: 114, 3
+  size: 37, 20
+  orig: 37, 20
+  offset: 0, 0
+  index: -1
+ca_1
+  rotate: false
+  xy: 258, 349
+  size: 149, 80
+  orig: 149, 80
+  offset: 0, 0
+  index: -1
+ca_2
+  rotate: true
+  xy: 307, 176
+  size: 153, 82
+  orig: 153, 82
+  offset: 0, 0
+  index: -1
+ca_3
+  rotate: false
+  xy: 164, 346
+  size: 92, 83
+  orig: 92, 84
+  offset: 0, 0
+  index: -1
+ca_4
+  rotate: false
+  xy: 161, 52
+  size: 123, 116
+  orig: 123, 117
+  offset: 0, 1
+  index: -1
+ca_5
+  rotate: true
+  xy: 2, 14
+  size: 157, 110
+  orig: 158, 110
+  offset: 1, 0
+  index: -1
+gio
+  rotate: false
+  xy: 164, 431
+  size: 216, 90
+  orig: 216, 91
+  offset: 0, 0
+  index: -1
+mat_cuoi
+  rotate: false
+  xy: 2, 2
+  size: 98, 10
+  orig: 98, 10
+  offset: 0, 0
+  index: -1
+mat_nham
+  rotate: true
+  xy: 382, 433
+  size: 88, 15
+  orig: 88, 15
+  offset: 0, 0
+  index: -1

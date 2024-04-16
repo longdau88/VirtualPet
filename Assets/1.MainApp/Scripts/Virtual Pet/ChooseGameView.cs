@@ -123,6 +123,7 @@ namespace MainApp.VirtualFriend
         private void OnClickGame(int index)
         {
             GameAudio.Instance.PlaySoundClickButton();
+            VirtualPetManager.Instance.panelBtnPlay.Hide();
 
             if (DataManager.Instance.isTestGame)
             {

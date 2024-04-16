@@ -1,0 +1,48 @@
+
+items zombiejump.png
+size: 1953,536
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+boom 1
+  rotate: true
+  xy: 577, 55
+  size: 479, 448
+  orig: 479, 448
+  offset: 0, 0
+  index: -1
+boom2
+  rotate: false
+  xy: 2, 2
+  size: 573, 532
+  orig: 573, 532
+  offset: 0, 0
+  index: -1
+bus
+  rotate: true
+  xy: 1027, 48
+  size: 486, 339
+  orig: 486, 339
+  offset: 0, 0
+  index: -1
+car
+  rotate: true
+  xy: 1368, 50
+  size: 484, 278
+  orig: 484, 278
+  offset: 0, 0
+  index: -1
+light
+  rotate: true
+  xy: 1648, 166
+  size: 72, 71
+  orig: 74, 73
+  offset: 1, 1
+  index: -1
+minesweeper
+  rotate: false
+  xy: 1648, 240
+  size: 303, 294
+  orig: 303, 294
+  offset: 0, 0
+  index: -1

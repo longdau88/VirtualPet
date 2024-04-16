@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using System;
 using Game.Utils;
@@ -9,8 +8,6 @@ namespace MainApp.VirtualFriend
 {
 	public class TimePetManager : MonoBehaviour
 	{
-		public static TimePetManager Instance { get; private set; }
-		
 		public Action<float, float, float> OnUpdateTime;
 
 		[SerializeField] float deltaTimeToHungry;
@@ -42,16 +39,7 @@ namespace MainApp.VirtualFriend
 
 		private void Awake()
 		{
-			if (Instance == null)
-			{
-				Instance = this;
-			}
-			else
-			{
-				Destroy(gameObject);
-			}
-
-			CreateFolderData();
+			DontDestroyOnLoad(gameObject);
 		}
 
 		void Start()
@@ -68,13 +56,15 @@ namespace MainApp.VirtualFriend
 		{
 			if (create)
 			{
+				CreateFolderData();
+
 				data = new MyPetData();
 
 				data.lastTimeEat = DateTime.Now.ToString();
 				data.lastTimeToilet = DateTime.Now.ToString();
 				data.lastTimeSleep = DateTime.Now.ToString();
 				data.lastValueSleep = 1;
-
+				data.gold = 0;
 				data.lastStateInt = (int)PetState.Normal;
 
 				SaveData();
@@ -83,15 +73,11 @@ namespace MainApp.VirtualFriend
 			{
 				data = SaveAndLoad<MyPetData>.LoadFileTextNoExpired(StaticConfig.FilePetData);
 			}
-
+;
 			GetData();
 			countDownValue = StartCoroutine(DecreaseValue());
 
 			VirtualPetManager.Instance.InitData(data, valueHungryRatio, valueAsleepRatio, valueDirtyRatio);
-
-
-			Debug.Log(timeHungry + "|" + timeAsleep + "|" + timeDirty);
-			Debug.Log(valueHungryRatio + "|" + valueAsleepRatio + "|" + valueDirtyRatio);
 		}
 
 		private void GetData()

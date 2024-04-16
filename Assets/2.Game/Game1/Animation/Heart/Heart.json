@@ -1,0 +1,78 @@
+{
+"skeleton": {
+	"hash": "Zh0BDg8UVDwmLQqnWyFTvR9xZ0Q",
+	"spine": "3.8.99",
+	"x": -86.44,
+	"y": -49.93,
+	"width": 177.01,
+	"height": 170.03,
+	"images": "./images/",
+	"audio": "D:/EHL/Anim/Ekids/53 - Run and run/Heart"
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "Main", "parent": "root", "x": -3.82, "y": -109.52, "scaleX": 0.6344, "scaleY": 0.6344 },
+	{ "name": "Heart", "parent": "Main", "x": 5.81, "y": 175.13 },
+	{ "name": "Shine_2", "parent": "Heart", "x": -1.66, "y": 55.61 }
+],
+"slots": [
+	{ "name": "demo-01", "bone": "root" },
+	{ "name": "Shine_1", "bone": "Heart", "attachment": "Shine_1" },
+	{ "name": "Shine_2", "bone": "Shine_2", "attachment": "Shine_2" },
+	{ "name": "Heart", "bone": "Heart", "attachment": "Heart" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"Heart": {
+				"Heart": { "x": -0.36, "y": 51.73, "width": 136, "height": 114 }
+			},
+			"Shine_1": {
+				"Shine_1": { "x": 0.23, "y": 55.33, "width": 205, "height": 205 }
+			},
+			"Shine_2": {
+				"Shine_2": { "x": 5.13, "y": -2.81, "width": 279, "height": 268 }
+			}
+		}
+	}
+],
+"animations": {
+	"Heart": {
+		"bones": {
+			"Shine_2": {
+				"rotate": [
+					{},
+					{ "time": 0.6667, "angle": 120 },
+					{ "time": 1.3333, "angle": -120 },
+					{ "time": 2 }
+				],
+				"scale": [
+					{ "x": 0.777, "y": 0.777, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.5, "x": 1.2, "y": 1.2, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1, "x": 0.777, "y": 0.777, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.5, "x": 1.2, "y": 1.2, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2, "x": 0.777, "y": 0.777 }
+				]
+			},
+			"Heart": {
+				"translate": [
+					{ "y": -1.93, "curve": 0.375, "c2": 0.62, "c3": 0.716 },
+					{ "time": 0.1, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.6, "y": -14.85, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.1, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.6, "y": -14.85, "curve": 0.243, "c3": 0.68, "c4": 0.71 },
+					{ "time": 2, "y": -1.93 }
+				],
+				"scale": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.5, "x": 0.886, "y": 0.886, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.5, "x": 0.886, "y": 0.886, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2 }
+				]
+			}
+		}
+	}
+}
+}
