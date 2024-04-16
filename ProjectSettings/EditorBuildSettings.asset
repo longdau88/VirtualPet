@@ -9,9 +9,6 @@ EditorBuildSettings:
     path: Assets/1.MainApp/Scenes/VirtualFriend.unity
     guid: e886a42aad2c0f146b204cb75766dedf
   - enabled: 1
-    path: Assets/2.Game/Game2/Scene/GamePlay2.unity
-    guid: 9449457096607474fa275852369b5638
-  - enabled: 1
     path: Assets/1.MainApp/XR/AR/Scenes/ARScenes.unity
     guid: 5be43bf1d7fc57c40879998017340765
   m_configObjects:
