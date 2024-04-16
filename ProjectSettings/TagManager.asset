@@ -3,7 +3,10 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - BlueGoal
+  - RedGoal
+  - Collider
   layers:
   - Default
   - TransparentFX
@@ -13,6 +16,7 @@ TagManager:
   - UI
   - 
   - 
+  - ARDK_MockWorld
   - 
   - 
   - 
@@ -34,8 +38,7 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
+  - XR Simulation
   - 
   m_SortingLayers:
   - name: Default
