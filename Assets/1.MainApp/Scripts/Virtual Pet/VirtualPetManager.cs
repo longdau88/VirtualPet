@@ -809,6 +809,10 @@ namespace MainApp.VirtualFriend
 		}
 		private void OnClickPlayAR()
 		{
+			if (panelBtnPlay.IsVisible)
+			{
+				panelBtnPlay.Hide();
+			}
 			DataManager.Instance.LoadSceneArAsync(() =>
 			{
 				ShowMainApp(false);

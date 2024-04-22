@@ -10,7 +10,8 @@ namespace Game.FlappyEddie
 	public class GameManager : MonoBehaviour
 	{
 		[SerializeField] string sceneName;
-		[SerializeField] int numQues;
+		public int numQues;
+		[SerializeField] Text healText;
 		[SerializeField] Button btnBack;
 		[Space]
 		[SerializeField] AudioClip bgMusic;
@@ -38,6 +39,10 @@ namespace Game.FlappyEddie
 		int countQues;
 		int countCoin;
 
+		public void UpdateTextHeal()
+		{
+			healText.text = "x " + numQues.ToString();
+		}
 
 		void Start()
 		{
@@ -112,11 +117,12 @@ namespace Game.FlappyEddie
 				TweenControl.GetInstance().ScaleFromZero(txtSecond.gameObject, 0.2f);
 			}
 
-			ClockController.Instance.ClockRun(numQues, 1, OnEndGame);
 			isPauseGame = false;
 			background.SetPause(false);
 			character.SetPhysics(true);
 			MoveBox();
+
+			UpdateTextHeal();
 
 			txtSecond.enabled = false;
 		}
@@ -215,11 +221,23 @@ namespace Game.FlappyEddie
 		#region Popup
 		private void ShowPopup()
 		{
-			TweenControl.GetInstance().DelayCall(this.transform, 1, () =>
+			numQues--;
+			if (numQues <= 0)
 			{
-				ResetGame();
-				OnNextQues();
-			});
+				numQues = 0;
+				UpdateTextHeal();
+
+				OnEndGame();
+			}
+            else
+            {
+				UpdateTextHeal();
+				TweenControl.GetInstance().DelayCall(this.transform, 1, () =>
+				{
+					ResetGame();
+					OnNextQues();
+				});
+			}
 		}
 
 		#endregion

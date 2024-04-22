@@ -14,6 +14,7 @@ namespace MainApp.VirtualFriend
         public int id;
         public AssetBundle game_ios;
         public AssetBundle game_android;
+        public string sceneName;
         public Sprite game_avatar;
     }
 
@@ -151,11 +152,22 @@ namespace MainApp.VirtualFriend
 
                 LoadingView.Instance.ShowLoading(1f, () =>
                 {
-                    DataManager.Instance.LoadScenes(assetScene, () =>
+                    if (assetScene != null)
                     {
-                        VirtualPetManager.Instance.ShowMainApp(false);
-                        gameObject.GetComponent<UIView>().Hide();
-                    });
+                        DataManager.Instance.LoadScenes(assetScene, () =>
+                        {
+                            VirtualPetManager.Instance.ShowMainApp(false);
+                            gameObject.GetComponent<UIView>().Hide();
+                        });
+                    }
+                    else
+                    {
+                        DataManager.Instance.LoadScenes(lstGame[index].sceneName, () =>
+                        {
+                            VirtualPetManager.Instance.ShowMainApp(false);
+                            gameObject.GetComponent<UIView>().Hide();
+                        });
+                    }
                 });
             }
         }
