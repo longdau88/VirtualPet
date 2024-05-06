@@ -10,6 +10,8 @@ using Spine.Unity;
 using UnityEngine.XR.ARSubsystems;
 using Game;
 using System;
+using MainApp.VirtualFriend;
+
 public class ARController : MonoBehaviour
 {
     public static ARController Instance;
@@ -152,6 +154,8 @@ public class ARController : MonoBehaviour
         {
             // Destroy Scenes AR
 
+            VirtualPetManager.Instance.isPlayGame = false;
+            VirtualPetManager.Instance.ShowPanelResultDialog(5);
         });
     }
 

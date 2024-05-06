@@ -12,6 +12,7 @@ public class DataManager : MonoBehaviour
     public bool isTestGame;
     [Space]
     public List<GameInfo> lstGame;
+    public List<FoodDataInPage> lstFood;
     [Space]
     [HideInInspector]
     public bool IsShowOtherScene;

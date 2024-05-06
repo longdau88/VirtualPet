@@ -28,9 +28,10 @@ namespace MainApp.VirtualFriend
 
 		float deltaTimeCallUpdateToMinutes;
 
-		float valueHungryRatio;
-		float valueAsleepRatio;
-		float valueDirtyRatio;
+		public float valueHungryRatio { get; set; }
+		public float valueAsleepRatio { get; set; }
+		public float valueDirtyRatio { get; set; }
+
 		private bool isDisable;
 		private float deltaTimeOnDisable;
 		private bool isPauseApp;
@@ -84,6 +85,7 @@ namespace MainApp.VirtualFriend
 		{
 			timeHungry = GameUtils.DeltaTimeToMinutes(data.TimeEat);
 			timeDirty = GameUtils.DeltaTimeToMinutes(data.TimeToilet);
+
 			//timeAsleep = GameUtils.DeltaTimeToMinutes(data.TimeSleep);
 
 			if (timeHungry >= deltaTimeToHungry)
@@ -158,6 +160,21 @@ namespace MainApp.VirtualFriend
 		public void SetIsSleeping(bool isSleeping)
 		{
 			IsSleeping = isSleeping;
+		}
+
+		public void SetTimeHungry(float x)
+        {
+			var discount = x - valueHungryRatio;
+			discount *= deltaTimeToHungry;
+
+			var discountTime = GameUtils.MinutesToDateTime(PetState.Eat, data,discount);
+
+			data.lastTimeEat = discountTime.ToString();
+			timeHungry = GameUtils.DeltaTimeToMinutes(data.TimeEat);
+
+			valueHungryRatio = (float)(deltaTimeToHungry - timeHungry) / (float)(deltaTimeToHungry);
+
+			SaveData();
 		}
 
 		IEnumerator DecreaseValue()

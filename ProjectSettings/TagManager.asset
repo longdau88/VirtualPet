@@ -7,11 +7,16 @@ TagManager:
   - BlueGoal
   - RedGoal
   - Collider
+  - Score
+  - Line
+  - Wall
+  - Limit
+  - Bubble
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Bubbles
   - Water
   - UI
   - 

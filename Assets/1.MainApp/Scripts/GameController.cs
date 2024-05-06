@@ -21,7 +21,8 @@ public class GameController : MonoBehaviour
 	[SerializeField] RectTransform targetCoin;
 	[SerializeField] RectTransform parentCoin;
 	[Space]
-	[SerializeField] AudioClip auc;
+	[SerializeField] AudioClip auc_Yeah;
+	[SerializeField] AudioClip auc_Ui;
 	[SerializeField] AudioClip auc_addCoin;
 
 
@@ -41,10 +42,21 @@ public class GameController : MonoBehaviour
 	{
 		if (isShowing) return;
 
-		if (auc != null)
-        {
-			GameAudio.Instance.PlayClip(SourceType.VOICE_OVER, auc, false);
+		if (score > 0)
+		{
+			if (auc_Yeah != null)
+			{
+				GameAudio.Instance.PlayClip(SourceType.SOUND_FX, auc_Yeah, false);
+			}
 		}
+        else
+        {
+			if (auc_Ui != null)
+			{
+				GameAudio.Instance.PlayClip(SourceType.SOUND_FX, auc_Ui, false);
+			}
+		}
+
 		isShowing = true;
 		imgTitle.sprite = lstImgTitle[1];
 
@@ -71,6 +83,10 @@ public class GameController : MonoBehaviour
 			{
 				item.transform.SetParent(targetCoin);
 				item.transform.localScale = Vector3.one;
+				if (auc_addCoin != null)
+				{
+					GameAudio.Instance.PlayClip(SourceType.SOUND_FX, auc_addCoin, false);
+				}
 				TweenControl.GetInstance().MoveRect(item.GetComponent<RectTransform>(), Vector3.zero, 0.5f, () =>
 				{
 					Destroy(item);

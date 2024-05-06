@@ -6,6 +6,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using DG.Tweening;
 using Doozy.Engine.UI;
+using MainApp.VirtualFriend;
 using UnityEngine;
 using UnityEngine.UI;
 using Random = UnityEngine.Random;
@@ -1054,6 +1055,28 @@ namespace Game.Utils
         {
             var length = DateTime.Now - startTime;
             return (float)length.TotalMinutes;
+        }
+
+        public static DateTime MinutesToDateTime(PetState state, MyPetData data, float totalMinutes)
+        {
+            DateTime currentTime;
+            switch (state)
+            {
+                case PetState.Eat:
+                    currentTime = data.TimeEat;
+                    break;
+                case PetState.Sleep:
+                    currentTime = data.TimeSleep;
+                    break;
+                case PetState.InToilet:
+                    currentTime = data.TimeToilet;
+                    break;
+                default:
+                    currentTime = data.TimeEat;
+                    break;
+            }
+            var newTime = currentTime.AddMinutes(totalMinutes);
+            return newTime;
         }
     }
 

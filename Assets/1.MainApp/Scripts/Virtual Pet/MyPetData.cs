@@ -41,11 +41,24 @@ namespace MainApp.VirtualFriend
 			get { return DateTime.Parse(timeStartSleep); }
 		}
 	}
-
+	[System.Serializable]
+	public class FoodData
+	{
+		public int id;
+		public Sprite imgFood;
+		public string name;
+		public int count;
+	}
+	[System.Serializable]
+	public class FoodDataInPage
+	{
+		public List<FoodData> lstFood;
+	}
 	public enum PetState
 	{
 		Normal,
 		Eat,
+		Kitchen,
 		Sleep,
 		ReadyToSleep,
 		InToilet

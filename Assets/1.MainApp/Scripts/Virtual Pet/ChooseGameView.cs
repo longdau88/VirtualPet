@@ -126,6 +126,8 @@ namespace MainApp.VirtualFriend
             GameAudio.Instance.PlaySoundClickButton();
             VirtualPetManager.Instance.panelBtnPlay.Hide();
 
+            VirtualPetManager.Instance.isPlayGame = true;
+
             if (DataManager.Instance.isTestGame)
             {
                 LoadingView.Instance.ShowLoading(1f, () =>
