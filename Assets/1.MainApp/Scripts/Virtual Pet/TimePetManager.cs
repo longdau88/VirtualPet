@@ -3,6 +3,7 @@ using UnityEngine;
 using System;
 using Game.Utils;
 using System.IO;
+using System.Collections.Generic;
 
 namespace MainApp.VirtualFriend
 {
@@ -66,8 +67,10 @@ namespace MainApp.VirtualFriend
 				data.lastTimeSleep = DateTime.Now.ToString();
 				data.lastValueSleep = 1;
 				data.gold = 0;
-				data.lastStateInt = (int)PetState.Normal;
+				data.lastStateInt = (int)PetState.Eat;
 
+				data.lstFoodSave = new List<FoodDataSave>(DataManager.Instance.InitFood());
+				
 				SaveData();
 			}
 			else

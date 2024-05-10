@@ -50,6 +50,7 @@ namespace MainApp.VirtualFriend
 
 		public void SetHungry(bool isTrue)
 		{
+			GameAudio.Instance.PlayClip(SourceType.SOUND_FX, soundHungry, false);
 			anim.SetBool("isHungry", isTrue);
 		}
 

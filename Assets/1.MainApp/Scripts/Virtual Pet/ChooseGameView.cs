@@ -90,6 +90,7 @@ namespace MainApp.VirtualFriend
         }
         public void OnClickClose()
         {
+            VirtualPetManager.Instance.PlayAucClickBtn();
             VirtualPetManager.Instance.HidePanelChooseGame();
         }
 

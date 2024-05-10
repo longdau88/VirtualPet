@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using Game.Utils;
+using System.Linq;
 
 namespace MainApp.VirtualFriend
 {
@@ -17,6 +18,8 @@ namespace MainApp.VirtualFriend
 		public string timeStartSleep;
 
 		public float lastValueSleep;
+
+		public List<FoodDataSave> lstFoodSave;
 
 		public PetState lastState { get { return (PetState)lastStateInt; } }
 		public int lastStateInt;
@@ -46,7 +49,6 @@ namespace MainApp.VirtualFriend
 	{
 		public int id;
 		public Sprite imgFood;
-		public string name;
 		public int count;
 	}
 	[System.Serializable]
@@ -54,6 +56,32 @@ namespace MainApp.VirtualFriend
 	{
 		public List<FoodData> lstFood;
 	}
+
+	[System.Serializable]
+	public class FoodDataSave
+	{
+		public string pos;
+		public int count;
+
+		public void Init(string _pos)
+        {
+			pos = _pos;
+			GetPos();
+			count = 0;
+		}
+
+		public int indexPage { get; set; }
+		public int indexInPage { get; set; }
+
+		public void GetPos()
+        {
+			string[] parts = pos.Split('|');
+			List<int> numbers = parts.Select(int.Parse).ToList();
+			indexPage = numbers[0];
+			indexInPage = numbers[1];
+		}
+	}
+
 	public enum PetState
 	{
 		Normal,

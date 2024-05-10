@@ -18,6 +18,57 @@ public class DataManager : MonoBehaviour
     public bool IsShowOtherScene;
 
 
+
+
+    public int GetMaxGold()
+    {
+        int max = lstFood[0].lstFood[0].count;
+        for (int i = 0; i < lstFood.Count; i++)
+        {
+            for (int j = 0; j < lstFood[i].lstFood.Count; j++)
+            {
+                if (lstFood[i].lstFood[j].count > max)
+                {
+                    max = lstFood[i].lstFood[j].count;
+                }
+            }
+        }
+        return max;
+    }
+    public int GetGoldFood(string pos)
+    {
+        int max = 0;
+        for (int i = 0; i < lstFood.Count; i++)
+        {
+            for (int j = 0; j < lstFood[i].lstFood.Count; j++)
+            {
+                string s = i.ToString() + "|" + j.ToString();
+                if (pos.Equals(s))
+                {
+                    max = lstFood[i].lstFood[j].count;
+                    break;
+                }
+            }
+        }
+        return max;
+    }
+
+    public List<FoodDataSave> InitFood()
+    {
+        var lstFoodSave = new List<FoodDataSave>();
+        for (int i = 0; i < lstFood.Count; i++)
+        {
+            for (int j = 0; j < lstFood[i].lstFood.Count; j++)
+            {
+                string pos = i.ToString() + "|" + j.ToString();
+                FoodDataSave food = new FoodDataSave();
+                food.Init(pos);
+                lstFoodSave.Add(food);
+            }
+        }
+        return lstFoodSave;
+    }
+
     private void Awake()
     {
         Instance = this;

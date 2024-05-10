@@ -52,7 +52,13 @@ namespace MainApp.VirtualFriend
 		[SerializeField] GameObject objFood;
 		[SerializeField] Button btnLeft;
 		[SerializeField] Button btnRight;
-		[SerializeField] List<Image> lstImgFood;
+		[SerializeField] List<ItemFoodEat> lstFood;
+		[SerializeField] Image imgFoodPrefabs;
+		[SerializeField] RectTransform posEndFood;
+		[Space]
+		[SerializeField] Button btnStore;
+		[SerializeField] GameObject panelStoreView;
+		[SerializeField] PanelStoreView StoreView;
 		[Space]
 		public UIView panelBtnPlay;
 		[SerializeField] Button btnPlayGame;
@@ -65,10 +71,8 @@ namespace MainApp.VirtualFriend
 		[Space]
 		[SerializeField] PopupPermissionAR popupPermissionAR;
 		[Space]
-		[SerializeField] Image foodIcon;
-		[SerializeField] Text txtMinusGold;
-		[SerializeField] Image imgGold;
 		[SerializeField] Text txtGoldPlayer;
+		[SerializeField] Button btnAddMoreGold;
 		[Space]
 		[SerializeField] Image imgValueHungry;
 		[SerializeField] Image imgValueDirty;
@@ -79,6 +83,7 @@ namespace MainApp.VirtualFriend
 		[SerializeField] AudioClip soundWaterShower;
 		[SerializeField] AudioClip soundLight;
 		[SerializeField] AudioClip soundSleep;
+		[SerializeField] AudioClip aucClick;
 		[Header("Config")]
 		[SerializeField] int numGoldToEat;
 		[Space]
@@ -115,7 +120,7 @@ namespace MainApp.VirtualFriend
 
 		bool isRecording;
 
-		MyPetController myPet;
+		public MyPetController myPet { get; set; }
 
 		bool isWashing;
 
@@ -127,8 +132,17 @@ namespace MainApp.VirtualFriend
 		bool isInit;
 
 
-
-
+		public void ShowOverLay(bool kt)
+        {
+			overlay.enabled = kt;
+		}
+		public void PlayAucClickBtn()
+        {
+			if (aucClick)
+			{
+				GameAudio.Instance.PlayClip(SourceType.SOUND_FX, aucClick, false);
+			}
+		}
 		public void ShowMainCanvas(bool isDisable)
 		{
 			ThisCanvas.enabled = isDisable;
@@ -151,8 +165,6 @@ namespace MainApp.VirtualFriend
 			isInit = false;
 			isPlayGame = false;
 
-			foodIcon.transform.localScale = Vector3.zero;
-
 			ShowMainApp(true);
 
 			objFood.SetActive(false);
@@ -161,6 +173,7 @@ namespace MainApp.VirtualFriend
 			panelChooseGame.Hide();
 			resultDialog.gameObject.transform.localScale = Vector3.zero;
 			popupPermissionAR.gameObject.transform.localScale = Vector3.zero;
+			panelStoreView.gameObject.transform.localScale = Vector3.zero;
 
 			countGold = 0;
 
@@ -188,6 +201,7 @@ namespace MainApp.VirtualFriend
         {
 			if (!isInit) return;
 			if (isPlayGame) return;
+			if (isShowPopup) return;
 			if (TimeManager.data.lastState != PetState.Eat && TimeManager.data.lastState != PetState.Kitchen) return;
 
 #if UNITY_EDITOR
@@ -371,6 +385,12 @@ namespace MainApp.VirtualFriend
 			btnPlayGame.onClick.RemoveAllListeners();
 			btnPlayGame.onClick.AddListener(OnClickPlayGame);
 
+			btnAddMoreGold.onClick.RemoveAllListeners();
+			btnAddMoreGold.onClick.AddListener(OnClickPlayGame);
+
+			btnStore.onClick.RemoveAllListeners();
+			btnStore.onClick.AddListener(OnClickStore);
+
 			btnLeft.onClick.RemoveAllListeners();
 			btnLeft.onClick.AddListener(OnClickLeftFood);
 
@@ -397,6 +417,7 @@ namespace MainApp.VirtualFriend
 
 			micInput.onStartRecord = OnStartRecord;
 			micInput.onRecordDone = OnRecordDone;
+
 		}
 
 		private void InitData()
@@ -431,12 +452,12 @@ namespace MainApp.VirtualFriend
 
 		private void StartGame()
         {
-			if (IsCreateGameApp("6"))
+			if (IsCreateGameApp("11"))
 			{
 				petState = PetState.Normal;
 				SaveLastScreenPrefabs((int)petState);
 
-				SaveCreateGameApp("6");
+				SaveCreateGameApp("11");
 				SaveGoldPlayer(countGold);
 
 				TimeManager.InitData(true);
@@ -553,7 +574,7 @@ namespace MainApp.VirtualFriend
 			GetData(valueHungry, valueAsleep, valueDirty);
 			GetLastScreen();
 
-			CheckStateToShowAnim();
+			CheckStateToShowAnim(TimeManager.data.lastState);
 
 			SetFreeToRepeat(true);
 			SetFreeToAttack(true);
@@ -641,27 +662,35 @@ namespace MainApp.VirtualFriend
 			ShowValueAsleep(valueAsleep);
 		}
 
-		private void CheckStateToShowAnim()
+		private void CheckStateToShowAnim(PetState screen)
 		{
 			if (isWashing) return;
 			if (!myPet) return;
 
-			if (TimeManager.IsExpired(PetState.InToilet))
-			{
-				myPet.SetDirty(true);
-			}
-			else if (TimeManager.IsExpired(PetState.Eat))
-			{
-				myPet.SetHungry(true);
-			}
-			else if (TimeManager.IsExpired(PetState.Sleep))
-			{
-				myPet.SetAsleep(true);
-			}
-			else
-			{
-				myPet.SetIdle();
-			}
+			switch (screen)
+            {
+                case PetState.Eat:
+					if (TimeManager.IsExpired(PetState.Eat))
+					{
+						myPet.SetHungry(true);
+					}
+					break;
+				case PetState.InToilet:
+					if (TimeManager.IsExpired(PetState.InToilet))
+					{
+						myPet.SetDirty(true);
+					}
+					break;
+				case PetState.ReadyToSleep:
+					if (TimeManager.IsExpired(PetState.Sleep))
+					{
+						myPet.SetAsleep(true);
+					}
+					break;
+				default:
+					myPet.SetIdle();
+					break;
+			};
 		}
 
 		public void SetFreeToRepeat(bool isFree)
@@ -724,7 +753,7 @@ namespace MainApp.VirtualFriend
 				bubblesFx.Stop();
 
 				myPet.SetDirty(false);
-				CheckStateToShowAnim();
+				CheckStateToShowAnim(TimeManager.data.lastState);
 			};
 
 			TimeManager.SaveData();
@@ -772,6 +801,7 @@ namespace MainApp.VirtualFriend
 		#region OnClick Handler
 		private void OnClickEat()
 		{
+			PlayAucClickBtn();
 			if (TimeManager.data.lastState == PetState.Eat)
 			{
 				if (panelBtnPlay.IsVisible)
@@ -824,8 +854,8 @@ namespace MainApp.VirtualFriend
                             isPauseUpdate = false;
                             SetFreeToRepeat(true);
 
-                            CheckStateToShowAnim();
-                        };
+							CheckStateToShowAnim(TimeManager.data.lastState);
+						};
 
                         TimeManager.SaveData();
                     }, () =>
@@ -845,18 +875,19 @@ namespace MainApp.VirtualFriend
 			return imgValueHungry.fillAmount;
 
 		}
-		public void SetFillImgValueHungry(float value)
+		public void SetFillImgValueHungry(float value, bool kt = false)
         {
 			imgValueHungry.DOFillAmount(value, 1f).onComplete = () =>
 			{
-				myPet.SetRelax();
-				CheckStateToShowAnim();
+				if (!kt)
+					myPet.SetRelax();
+				CheckStateToShowAnim(TimeManager.data.lastState);
 			};
 		}
 
 		private void PlayAnimFood()
 		{
-			var curPos = foodIcon.rectTransform.localPosition;
+			/*var curPos = foodIcon.rectTransform.localPosition;
 
 			foodIcon.transform.localScale = Vector3.one;
 			txtMinusGold.text = "-" + numGoldToEat;
@@ -875,7 +906,7 @@ namespace MainApp.VirtualFriend
 			TweenControl.GetInstance().FadeAnfa(foodIcon, 0, 2, null, Ease.Linear, 1);
 			TweenControl.GetInstance().FadeAnfaText(txtMinusGold, 0, 2, null, Ease.Linear, 1);
 			TweenControl.GetInstance().FadeAnfa(imgGold, 0, 2, null, Ease.Linear, 1);
-			txtMinusGold.GetComponent<Outline>().DOFade(0, 2).SetDelay(1);
+			txtMinusGold.GetComponent<Outline>().DOFade(0, 2).SetDelay(1);*/
 		}
 
 		private void OnClickLight()
@@ -921,6 +952,7 @@ namespace MainApp.VirtualFriend
 
 		private void OnClickGotoSleep()
 		{
+			PlayAucClickBtn();
 			panelBtnPlay.Hide();
 			if (TimeManager.data.lastState == PetState.ReadyToSleep)
 			{
@@ -943,6 +975,7 @@ namespace MainApp.VirtualFriend
 
 		private void OnClickToilet()
 		{
+			PlayAucClickBtn();
 			panelBtnPlay.Hide();
 			if (TimeManager.data.lastState == PetState.InToilet)
 			{
@@ -983,7 +1016,7 @@ namespace MainApp.VirtualFriend
 				SetFreeToRepeat(true);
 
 				myPet.SetDirty(false);
-				CheckStateToShowAnim();
+				CheckStateToShowAnim(TimeManager.data.lastState);
 			};
 
 			TimeManager.data.lastStateInt = (int)PetState.InToilet;
@@ -994,6 +1027,7 @@ namespace MainApp.VirtualFriend
 
 		private void OnClickPlayGame()
         {
+			PlayAucClickBtn();
 			ShowPanelChooseGame();
 		}
 		private void OnClickPlayAR()
@@ -1002,11 +1036,13 @@ namespace MainApp.VirtualFriend
 			{
 				panelBtnPlay.Hide();
 			}
+
+			PlayAucClickBtn();
 			DataManager.Instance.LoadSceneArAsync(() =>
 			{
 				ShowMainApp(false);
 
-				VirtualPetManager.Instance.isPlayGame = true;
+				isPlayGame = true;
 
 				ARController.Instance.InitARViewVocab(ARPrefab);
 			});
@@ -1061,7 +1097,7 @@ namespace MainApp.VirtualFriend
 
 				if (imgValueHungry.fillAmount < 0.5f)
                 {
-					var x = imgValueHungry.fillAmount + 0.125f;
+					var x = imgValueHungry.fillAmount + 0.5f / (DataManager.Instance.lstGame.Count + 1);
 					if (x > 0.5f)
                     {
 						x = 0.5f;
@@ -1101,7 +1137,7 @@ namespace MainApp.VirtualFriend
 
 			ShowValueAsleep(timeAsleep);
 
-			CheckStateToShowAnim();
+			CheckStateToShowAnim(TimeManager.data.lastState);
 
 			if (TimeManager.IsSleeping) myPet.PlaySoundSleep();
 		}
@@ -1201,6 +1237,38 @@ namespace MainApp.VirtualFriend
 			}
 		}
 		int indexLstFood;
+		public string GetCountFood(int i, int j)
+        {
+			string pos = i.ToString() + "|" + j.ToString();
+
+			int count = 0;
+			var foundElement = TimeManager.data.lstFoodSave.FirstOrDefault(food => food.pos.Equals(pos));
+			if (foundElement != null)
+            {
+				count = foundElement.count;
+			}
+            else
+            {
+				count = 0;
+			}
+
+			return count.ToString();
+        }
+		public int GetCountFoodInt(string s)
+		{
+			int count = 0;
+			var foundElement = TimeManager.data.lstFoodSave.FirstOrDefault(food => food.pos.Equals(s));
+			if (foundElement != null)
+			{
+				count = foundElement.count;
+			}
+			else
+			{
+				count = 0;
+			}
+
+			return count;
+		}
 		private void InitFood()
         {
 			objFood.SetActive(true);
@@ -1218,16 +1286,58 @@ namespace MainApp.VirtualFriend
 				btnRight.gameObject.SetActive(true);
 			}
 
-			for (int i = 0; i < lstImgFood.Count; i++)
+			for (int i = 0; i < lstFood.Count; i++)
             {
-				if (i < count)
+				var temp = i;
+				if (temp < count)
 				{
-					lstImgFood[i].sprite = page.lstFood[i].imgFood;
-					lstImgFood[i].gameObject.SetActive(true);
+					string s = indexLstFood.ToString() + "|" + temp.ToString();
+					var x = GetCountFoodInt(s);
+					lstFood[temp].InitFoodEat(s , page.lstFood[temp], x);
+					lstFood[temp].gameObject.SetActive(true);
 				}
                 else
                 {
-					lstImgFood[i].gameObject.SetActive(false);
+					lstFood[temp].gameObject.SetActive(false);
+				}
+			}
+		}
+		private void LoadFoodInPage()
+        {
+			objFood.SetActive(true);
+			var page = DataManager.Instance.lstFood[indexLstFood];
+			var count = page.lstFood.Count;
+
+			if (indexLstFood == 0)
+			{
+				btnLeft.gameObject.SetActive(false);
+			}
+			else
+			{
+				btnLeft.gameObject.SetActive(true);
+			}
+			if (DataManager.Instance.lstFood.Count - 1 == indexLstFood)
+			{
+				btnRight.gameObject.SetActive(false);
+			}
+            else
+            {
+				btnRight.gameObject.SetActive(true);
+			}
+
+			for (int i = 0; i < lstFood.Count; i++)
+			{
+				var temp = i;
+				if (temp < count)
+				{
+					string s = indexLstFood.ToString() + "|" + temp.ToString();
+					var x = GetCountFoodInt(s);
+					lstFood[temp].InitFoodEat(s, page.lstFood[temp], x);
+					lstFood[temp].gameObject.SetActive(true);
+				}
+				else
+				{
+					lstFood[temp].gameObject.SetActive(false);
 				}
 			}
 		}
@@ -1236,30 +1346,32 @@ namespace MainApp.VirtualFriend
         {
 			indexLstFood--;
 			if (indexLstFood <= 0)
+            {
+				btnLeft.gameObject.SetActive(false);
 				indexLstFood = 0;
+			}
+            else
+            {
+				btnLeft.gameObject.SetActive(true);
+			}
 			var page = DataManager.Instance.lstFood[indexLstFood];
 			var count = page.lstFood.Count;
 
-			btnLeft.gameObject.SetActive(false);
-			if (DataManager.Instance.lstFood.Count <= 1)
-			{
-				btnRight.gameObject.SetActive(false);
-			}
-			else
-			{
-				btnRight.gameObject.SetActive(true);
-			}
+			btnRight.gameObject.SetActive(true);
 
-			for (int i = 0; i < lstImgFood.Count; i++)
+			for (int i = 0; i < lstFood.Count; i++)
 			{
-				if (i < count)
+				var temp = i;
+				if (temp < count)
 				{
-					lstImgFood[i].sprite = page.lstFood[i].imgFood;
-					lstImgFood[i].gameObject.SetActive(true);
+					string s = indexLstFood.ToString() + "|" + temp.ToString();
+					var x = GetCountFoodInt(s);
+					lstFood[temp].InitFoodEat(s, page.lstFood[temp], x);
+					lstFood[temp].gameObject.SetActive(true);
 				}
 				else
 				{
-					lstImgFood[i].gameObject.SetActive(false);
+					lstFood[temp].gameObject.SetActive(false);
 				}
 			}
 		}
@@ -1276,18 +1388,64 @@ namespace MainApp.VirtualFriend
 			var page = DataManager.Instance.lstFood[indexLstFood];
 			var count = page.lstFood.Count;
 
-			for (int i = 0; i < lstImgFood.Count; i++)
+			for (int i = 0; i < lstFood.Count; i++)
 			{
-				if (i < count)
+				var temp = i;
+				if (temp < count)
 				{
-					lstImgFood[i].sprite = page.lstFood[i].imgFood;
-					lstImgFood[i].gameObject.SetActive(true);
+					string s = indexLstFood.ToString() + "|" + temp.ToString();
+					var x = GetCountFoodInt(s);
+					lstFood[temp].InitFoodEat(s, page.lstFood[temp], x);
+					lstFood[temp].gameObject.SetActive(true);
 				}
 				else
 				{
-					lstImgFood[i].gameObject.SetActive(false);
+					lstFood[temp].gameObject.SetActive(false);
 				}
 			}
+		}
+
+		public void OnClickFood(RectTransform posStart, Sprite _img, System.Action onDone = null)
+        {
+			overlay.enabled = true;
+			overlay.color = new Color(0, 0, 0, 0);
+			var img = Instantiate(imgFoodPrefabs, posStart);
+			img.sprite = _img;
+			img.SetNativeSize();
+			img.gameObject.transform.localScale = Vector3.one * 2;
+			var rect = img.gameObject.GetComponent<RectTransform>();
+			rect.anchoredPosition = Vector2.zero;
+			img.gameObject.transform.SetParent(posEndFood);
+
+			TweenControl.GetInstance().Scale(img.gameObject, Vector3.zero, 0.3f);
+			TweenControl.GetInstance().MoveRect(rect, Vector2.zero, 0.3f, () =>
+			{
+				Destroy(img.gameObject);
+				if (onDone != null) onDone?.Invoke();
+			});
+		}
+
+		public void OnClickStore()
+        {
+			overlay.enabled = true;
+			overlay.color = new Color(0, 0, 0, 0);
+			PlayAucClickBtn();
+			TweenControl.GetInstance().Scale(panelStoreView, Vector3.one, 0.2f, () =>
+			{
+				isShowPopup = true;
+				StoreView.Init(DataManager.Instance.lstFood);
+			});
+        }
+
+		public void HideStoreView()
+        {
+			TweenControl.GetInstance().Scale(panelStoreView, Vector3.zero, 0.2f, () =>
+			{
+				isShowPopup = false;
+				overlay.enabled = false;
+
+				LoadFoodInPage();
+			});
 		}
 
 		private void ChangeScreen(PetState stateScreen, Action onComplete)
@@ -1347,7 +1505,7 @@ namespace MainApp.VirtualFriend
 
 						TweenControl.GetInstance().DelayCall(this.transform, length, () =>
 						{
-							CheckStateToShowAnim();
+							CheckStateToShowAnim(TimeManager.data.lastState);
 							micInput.OnNotRecord();
 							micInput.InitMic();
 							micInput._isInitialized = true;
