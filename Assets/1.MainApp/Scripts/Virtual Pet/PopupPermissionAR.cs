@@ -15,14 +15,12 @@ namespace MainApp.VirtualFriend
 
 		public void InitPopup(System.Action onConfirm)
 		{
-			txtContent.text = LabelLanguage.ContentPermissionAR[LanguageController.Instance.GetIdLanguage()];
-			txtAgree.text = LabelLanguage.Continue[LanguageController.Instance.GetIdLanguage()];
+			txtContent.text = LabelLanguage.ContentPermissionAR[1];
+			txtAgree.text = LabelLanguage.Continue[1];
 
 			btnConfirm.onClick.RemoveAllListeners();
 			btnConfirm.onClick.AddListener(() =>
 			{
-				VirtualPetManager.Instance.HidePopupPermissionAR();
-
 #if UNITY_IOS
 				Application.RequestUserAuthorization(UserAuthorization.WebCam);
 #endif
@@ -30,6 +28,9 @@ namespace MainApp.VirtualFriend
 #if UNITY_ANDROID
 				Permission.RequestUserPermission(Permission.Camera);
 #endif
+
+				VirtualPetManager.Instance.HidePopupPermissionAR();
+
 				onConfirm?.Invoke();
 			});
 		}

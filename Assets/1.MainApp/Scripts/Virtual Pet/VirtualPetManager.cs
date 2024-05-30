@@ -452,15 +452,18 @@ namespace MainApp.VirtualFriend
 
 		private void StartGame()
         {
-			if (IsCreateGameApp("11"))
+			if (IsCreateGameApp("20"))
 			{
-				petState = PetState.Normal;
-				SaveLastScreenPrefabs((int)petState);
-
-				SaveCreateGameApp("11");
-				SaveGoldPlayer(countGold);
-
 				TimeManager.InitData(true);
+
+				//petState = PetState.Eat;
+				//SaveLastScreenPrefabs((int)petState);
+
+				SaveCreateGameApp("20");
+				//SaveGoldPlayer(countGold);
+				GetGoldPlayer();
+
+				petState = GetLastScreenPrefabs();
 
 				TimeManager.OnUpdateTime = UpdateValueTime;
 			}
@@ -1060,6 +1063,7 @@ namespace MainApp.VirtualFriend
         {
 			isShowPopup = true;
 			panelChooseGame.Show();
+			chooseGameView.InitPanelChooseGame(DataManager.Instance.lstGame);
 		}
 		public void HidePanelChooseGame()
 		{

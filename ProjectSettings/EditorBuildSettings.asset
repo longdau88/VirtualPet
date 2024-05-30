@@ -20,6 +20,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/2.Game/Game3/Scenes/GamePlay3.unity
     guid: c5cc0fc7311758c498a381d2d23fd915
+  - enabled: 1
+    path: Assets/2.Game/GameAR/ARShooting/Scenes/ARShooting.unity
+    guid: ec3c887e22aa2884482ab891134e6eb5
+  - enabled: 1
+    path: Assets/2.Game/GameAR/BasketBall/Scenes/BasketBall.unity
+    guid: d488618c7380d8f4db36cf0b45f1c37e
+  - enabled: 1
+    path: Assets/2.Game/GameAR/SpaceInfiniteRunner/Scenes/SpaceInfiniteRunner.unity
+    guid: f776f9fd8411d9f45bacf783f2f54e97
+  - enabled: 1
+    path: Assets/2.Game/GameAR/ZombieShoting/Scenes/ZombieShoting.unity
+    guid: 9b4ccbb6a65a6704b8854c491cf0ed97
   m_configObjects:
     Niantic.Lightship.AR.LightshipSettings: {fileID: 11400000, guid: 1203cf1c3c07256428e007b67b31eb65, type: 2}
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: b8afb4405d8cc1548925a9e06f1e0cc1, type: 2}
