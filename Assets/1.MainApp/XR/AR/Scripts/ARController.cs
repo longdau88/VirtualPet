@@ -366,7 +366,7 @@ public class ARController : MonoBehaviour
                 {
                     if (arObj.IsPreview)
                     {
-                        SpawnARObject();
+                        //SpawnARObject();
                     }
                     else
                     {

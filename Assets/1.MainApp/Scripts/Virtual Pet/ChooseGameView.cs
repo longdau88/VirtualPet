@@ -128,6 +128,8 @@ namespace MainApp.VirtualFriend
             VirtualPetManager.Instance.panelBtnPlay.Hide();
 
             VirtualPetManager.Instance.isPlayGame = true;
+            VirtualPetManager.Instance.SetFreeToAttack(false);
+            VirtualPetManager.Instance.SetFreeToRepeat(false);
 
             if (DataManager.Instance.isTestGame)
             {

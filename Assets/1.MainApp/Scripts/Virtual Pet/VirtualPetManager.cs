@@ -154,6 +154,8 @@ namespace MainApp.VirtualFriend
 		{
 			Instance = this;
 
+			TimeManager.CreateFolderData();
+
 			ThisCanvas = GetComponent<Canvas>();
 			audioListener = mainCamera.GetComponent<AudioListener>();
 			DontDestroyOnLoad(gameObject);
@@ -183,9 +185,27 @@ namespace MainApp.VirtualFriend
 			bubblesFx.Stop();
 
 			AddListener();
+
+			GetPermission();
 			InitData();
 
 			chooseGameView.InitPanelChooseGame(DataManager.Instance.lstGame);
+		}
+		private void GetPermission()
+		{
+#if UNITY_IOS
+			if (!Application.HasUserAuthorization(UserAuthorization.Microphone))
+			{
+				Application.RequestUserAuthorization(UserAuthorization.Microphone);
+			}
+#endif
+
+#if UNITY_ANDROID
+			if (!Permission.HasUserAuthorizedPermission(Permission.Microphone))
+			{
+				Permission.RequestUserPermission(Permission.Microphone);
+			}
+#endif
 		}
 
 		private Vector2 startPos;
@@ -577,11 +597,19 @@ namespace MainApp.VirtualFriend
 			GetData(valueHungry, valueAsleep, valueDirty);
 			GetLastScreen();
 
+			isPlayGame = false;
 			CheckStateToShowAnim(TimeManager.data.lastState);
 
-			SetFreeToRepeat(true);
-			SetFreeToAttack(true);
-
+			if (TimeManager.data.lastState == PetState.Eat)
+			{
+				SetFreeToAttack(true);
+				SetFreeToRepeat(true);
+			}
+			else
+			{
+				SetFreeToAttack(false);
+				SetFreeToRepeat(false);
+			}
 
 			isInit = true;
 		}
@@ -669,6 +697,7 @@ namespace MainApp.VirtualFriend
 		{
 			if (isWashing) return;
 			if (!myPet) return;
+			if (isPlayGame) return;
 
 			switch (screen)
             {
@@ -739,8 +768,8 @@ namespace MainApp.VirtualFriend
 			SetFreeToRepeat(false);
 			GameAudio.Instance.PlayClip(SourceType.SOUND_FX, soundWaterShower, false, () =>
 			{
-				SetFreeToAttack(true);
-				SetFreeToRepeat(true);
+				//SetFreeToAttack(true);
+				//SetFreeToRepeat(true);
 			});
 			waterShower.Play();
 
@@ -791,8 +820,8 @@ namespace MainApp.VirtualFriend
 			if (!TimeManager.IsSleeping) return;
 
 			AudioController.Instance.StopAudio(soundSleep);
-			SetFreeToRepeat(true);
-			SetFreeToAttack(true);
+			//SetFreeToRepeat(true);
+			//SetFreeToAttack(true);
 			TimeManager.SetIsSleeping(false);
 			TimeManager.data.lastValueSleep = imgValueSleep.fillAmount < 1 ? imgValueSleep.fillAmount : 1;
 			TimeManager.UpdateTime(PetState.Sleep);
@@ -820,6 +849,7 @@ namespace MainApp.VirtualFriend
 			{
 				ChangeScreen(PetState.Eat, () =>
 				{
+					CheckStateToShowAnim(TimeManager.data.lastState);
 					//SetEat();
 				});
 			}
@@ -1016,7 +1046,7 @@ namespace MainApp.VirtualFriend
 			imgValueDirty.DOFillAmount(1, timeAnimToilet).onComplete = () =>
 			{
 				isPauseUpdate = false;
-				SetFreeToRepeat(true);
+				//SetFreeToRepeat(true);
 
 				myPet.SetDirty(false);
 				CheckStateToShowAnim(TimeManager.data.lastState);
@@ -1098,6 +1128,19 @@ namespace MainApp.VirtualFriend
 			TweenControl.GetInstance().Scale(resultDialog.gameObject, Vector3.zero, 0.2f, () =>
 			{
 				isPlayGame = false;
+
+				CheckStateToShowAnim(TimeManager.data.lastState);
+
+				if (TimeManager.data.lastState == PetState.Eat)
+				{
+					SetFreeToAttack(true);
+					SetFreeToRepeat(true);
+				}
+				else
+				{
+					SetFreeToAttack(false);
+					SetFreeToRepeat(false);
+				}
 
 				if (imgValueHungry.fillAmount < 0.5f)
                 {
@@ -1468,8 +1511,16 @@ namespace MainApp.VirtualFriend
 
 					TimeManager.data.lastStateInt = (int)stateScreen;
 
-					SetFreeToAttack(true);
-					SetFreeToRepeat(true);
+					if (TimeManager.data.lastState == PetState.Eat)
+					{
+						SetFreeToAttack(true);
+						SetFreeToRepeat(true);
+					}
+                    else
+                    {
+						SetFreeToAttack(false);
+						SetFreeToRepeat(false);
+					}
 
 					TweenControl.GetInstance().FadeAnfa(overlay, 0, 0.25f, () =>
 					{

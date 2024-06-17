@@ -58,8 +58,6 @@ namespace MainApp.VirtualFriend
 		{
 			if (create)
 			{
-				CreateFolderData();
-
 				data = new MyPetData();
 
 				data.lastTimeEat = DateTime.Now.ToString();
@@ -75,9 +73,26 @@ namespace MainApp.VirtualFriend
 			}
 			else
 			{
-				data = SaveAndLoad<MyPetData>.LoadFileTextNoExpired(StaticConfig.FilePetData);
+				if (CheckFileDataTxt())
+                {
+					data = SaveAndLoad<MyPetData>.LoadFileTextNoExpired(StaticConfig.FilePetData);
+				}
+                else
+                {
+					data = new MyPetData();
+
+					data.lastTimeEat = DateTime.Now.ToString();
+					data.lastTimeToilet = DateTime.Now.ToString();
+					data.lastTimeSleep = DateTime.Now.ToString();
+					data.lastValueSleep = 1;
+					data.gold = 0;
+					data.lastStateInt = (int)PetState.Eat;
+
+					data.lstFoodSave = new List<FoodDataSave>(DataManager.Instance.InitFood());
+					SaveData();
+				}
 			}
-;
+
 			GetData();
 			countDownValue = StartCoroutine(DecreaseValue());
 
@@ -157,7 +172,7 @@ namespace MainApp.VirtualFriend
 
 		public void SaveData()
 		{
-			SaveAndLoad<MyPetData>.SaveJson(data, StaticConfig.FilePetData, ObjectSaveType.txt, "", PathFile.DataNoExpired);
+			SaveAndLoad<MyPetData>.SaveJson(data, StaticConfig.FilePetData, ObjectSaveType.txt, "");
 		}
 
 		public void SetIsSleeping(bool isSleeping)
@@ -330,25 +345,28 @@ namespace MainApp.VirtualFriend
 			}
 		}
 
-		private void CreateFolderData()
+		public void CreateFolderData()
 		{
 			var pathData = Path.Combine(Application.temporaryCachePath, "data");
 			if (!Directory.Exists(pathData))
 			{
 				DirectoryInfo directory = new DirectoryInfo(pathData);
 				directory = Directory.CreateDirectory(pathData);
-			}
 
-			if (!Directory.Exists(PathDataNoExpired))
-			{
-				DirectoryInfo directory = new DirectoryInfo(PathDataNoExpired);
-				directory = Directory.CreateDirectory(PathDataNoExpired);
+				Debug.Log("Create Folder Data");
 			}
+		}
+
+		private bool CheckFileDataTxt()
+        {
+			var path = Path.Combine(PathDataNoExpired, StaticConfig.FilePetData + ".txt");
+			Debug.Log(path);
+			return File.Exists(path);
 		}
 
 		public static string PathDataNoExpired
 		{
-			get { return Path.Combine(Application.temporaryCachePath, "data", "otherNoExpired"); }
+			get { return Path.Combine(Application.temporaryCachePath, "data"); }
 		}
 	}
 }
